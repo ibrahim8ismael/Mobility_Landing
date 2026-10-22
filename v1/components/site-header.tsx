@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, MessageCircle, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -65,9 +65,6 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
               <span className="font-display text-[1.08rem] font-extrabold tracking-[-0.045em] text-ink sm:text-[1.28rem]">
                 {brand.name}
               </span>
-              <span dir="auto" className="mt-1 hidden max-w-[128px] truncate text-[0.56rem] font-semibold text-slate-500 sm:block sm:max-w-none sm:text-[0.62rem]">
-                {brand.tagline}
-              </span>
             </span>
             <span className="mx-0.5 h-7 w-px shrink-0 bg-slate-200 sm:mx-1 sm:h-8" aria-hidden="true" />
             <span className="relative block h-8 w-[68px] shrink-0 overflow-hidden sm:h-9 sm:w-[82px]" aria-hidden="true">
@@ -102,13 +99,6 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
 
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <LocaleSwitcher locale={locale} label={dict.switchLanguage} />
-            <a
-              href="#contact"
-              aria-label={dict.talkToSales}
-              className="grid size-9 shrink-0 place-items-center rounded-full bg-mobil text-white transition-colors hover:bg-mobil-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mobil sm:size-10"
-            >
-              <MessageCircle className="size-[17px] sm:size-[18px]" strokeWidth={2.2} aria-hidden="true" />
-            </a>
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
