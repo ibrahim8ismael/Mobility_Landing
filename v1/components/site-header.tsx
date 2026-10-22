@@ -57,14 +57,13 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
             dir="ltr"
             className="group flex shrink-0 items-center gap-2.5"
           >
-            <span className="relative block size-11 shrink-0 overflow-hidden sm:size-12" aria-hidden="true">
+            <span className="relative block h-8 w-[132px] shrink-0 overflow-hidden rounded-lg bg-black sm:h-10 sm:w-[164px]" aria-hidden="true">
               <Image
-                src="/mobility-logo.png"
+                src="/mobility-wordmark.png"
                 alt=""
                 fill
-                sizes="48px"
+                sizes="(min-width: 640px) 164px, 132px"
                 className="object-cover"
-                style={{ objectPosition: "22% 50%" }}
                 priority
               />
             </span>
