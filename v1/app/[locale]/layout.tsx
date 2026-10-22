@@ -96,7 +96,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       data-theme="light"
       className={`${fontClasses} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-white text-ink">
+      <body className="flex min-h-full flex-col bg-[#f1f2f4] text-ink">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-mobil focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"

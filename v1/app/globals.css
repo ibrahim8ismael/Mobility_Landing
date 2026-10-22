@@ -42,13 +42,35 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 7.5rem;
 }
 
 body {
-  background: #ffffff;
+  background: #f1f2f4;
   color: var(--color-ink);
   font-family: var(--font-sans);
+}
+
+.hero-stage {
+  min-height: clamp(36rem, calc(100svh - 9.5rem), 53rem);
+}
+
+.hero-image-shade {
+  background:
+    linear-gradient(180deg, rgba(4, 12, 21, 0.18) 0%, rgba(4, 12, 21, 0.2) 42%, rgba(4, 12, 21, 0.78) 100%),
+    linear-gradient(90deg, rgba(4, 12, 21, 0.62) 0%, rgba(4, 12, 21, 0.12) 48%, rgba(4, 12, 21, 0.58) 100%);
+}
+
+@media (max-width: 639px) {
+  .hero-stage {
+    min-height: max(42rem, calc(100svh - 8.5rem));
+  }
+
+  .hero-image-shade {
+    background:
+      linear-gradient(180deg, rgba(4, 12, 21, 0.02) 0%, rgba(4, 12, 21, 0.18) 24%, rgba(4, 12, 21, 0.94) 100%),
+      linear-gradient(90deg, rgba(4, 12, 21, 0.22), rgba(4, 12, 21, 0.08) 55%, rgba(4, 12, 21, 0.38));
+  }
 }
 
 html[dir="rtl"] {

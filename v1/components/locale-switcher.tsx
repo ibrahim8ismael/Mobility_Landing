@@ -1,4 +1,4 @@
-import { localeNames, locales, localeShortNames, type Locale } from "@/i18n/config";
+import { localeNames, otherLocale, type Locale } from "@/i18n/config";
 
 type LocaleSwitcherProps = {
   locale: Locale;
@@ -7,34 +7,17 @@ type LocaleSwitcherProps = {
 };
 
 export function LocaleSwitcher({ locale, label, className = "" }: LocaleSwitcherProps) {
-  return (
-    <div
-      dir="ltr"
-      role="group"
-      aria-label={label}
-      className={`inline-flex items-center rounded-full border border-slate-200 bg-white/70 p-0.5 ${className}`}
-    >
-      {locales.map((code) => {
-        const isActive = code === locale;
+  const nextLocale = otherLocale(locale);
 
-        return (
-          <a
-            key={code}
-            href={`/${code}`}
-            hrefLang={code}
-            lang={code}
-            aria-label={`${label}: ${localeNames[code]}`}
-            aria-current={isActive ? "page" : undefined}
-            className={`rounded-full px-2.5 py-1 text-[0.68rem] font-semibold transition-colors ${
-              isActive
-                ? "bg-mobil text-white shadow-[0_4px_10px_-6px_rgba(22,75,152,0.9)]"
-                : "text-slate-500 hover:text-ink"
-            }`}
-          >
-            {localeShortNames[code]}
-          </a>
-        );
-      })}
-    </div>
+  return (
+    <a
+      href={`/${nextLocale}`}
+      hrefLang={nextLocale}
+      lang={nextLocale}
+      aria-label={`${label}: ${localeNames[nextLocale]}`}
+      className={`whitespace-nowrap rounded-full px-2 py-2 text-[0.78rem] font-semibold text-ink transition-colors hover:text-mobil focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mobil sm:px-2.5 sm:text-[0.86rem] ${className}`}
+    >
+      {localeNames[nextLocale]}
+    </a>
   );
 }

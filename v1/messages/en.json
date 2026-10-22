@@ -33,13 +33,13 @@
     "switchLanguage": "Switch language"
   },
   "hero": {
-    "eyebrow": "Industrial & fleet lubricants · Egypt",
+    "imageAlt": "Technician handling Mobil 1 oil in a workshop",
     "titlePrefix": "Your Authorized",
     "titleBrand": "Mobil Distributor",
-    "titleSuffix": "in Egypt",
-    "lead": "More than just oils — we provide total engineering solutions.",
-    "body": "As an official Mobil distributor, we deliver authentic industrial lubrication, local warehousing, and expert technical support to help keep your operations running.",
-    "ctaPrimary": "Request a technical consultation",
+    "titleSuffix": "in Egypt…",
+    "lead": "More than just oils. We provide total engineering solutions!",
+    "body": "As a trusted official Mobil distributor, we deliver 100% authentic industrial lubrication, unmatched local warehousing, and expert technical support to keep your operations running seamlessly.",
+    "ctaPrimary": "Contact us",
     "ctaSecondary": "Explore products",
     "proof": [
       "Local warehousing",
