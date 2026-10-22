@@ -73,27 +73,6 @@
       "bottomValue": "Supply, service, and support"
     }
   },
-  "range": {
-    "aria": "Product range at a glance",
-    "items": [
-      {
-        "label": "Industrial hydraulics",
-        "value": "Mobil DTE 20 Series"
-      },
-      {
-        "label": "Industrial gears",
-        "value": "Mobilgear 600 XP Series"
-      },
-      {
-        "label": "Fleet & commercial",
-        "value": "Mobil Delvac"
-      },
-      {
-        "label": "Condition monitoring",
-        "value": "Mobil Serv℠ Oil Analysis"
-      }
-    ]
-  },
   "why": {
     "eyebrow": "Why Mobility",
     "titlePrefix": "A distributor that acts like part of",

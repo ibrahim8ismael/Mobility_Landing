@@ -5,7 +5,6 @@ import { Coverage } from "@/components/coverage";
 import { Hero } from "@/components/hero";
 import { Process } from "@/components/process";
 import { Products } from "@/components/products";
-import { RangeStrip } from "@/components/range-strip";
 import { Services } from "@/components/services";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -31,7 +30,6 @@ export default async function HomePage({
       <SiteHeader locale={locale} dict={dict.nav} brand={dict.brand} />
       <main id="main" className="flex-1">
         <Hero dict={dict.hero} />
-        <RangeStrip dict={dict.range} />
         <WhyMobility dict={dict.why} />
         <Products dict={dict.products} />
         <Services dict={dict.services} />

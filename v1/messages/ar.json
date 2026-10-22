@@ -73,27 +73,6 @@
       "bottomValue": "توريد وخدمة ودعم"
     }
   },
-  "range": {
-    "aria": "نظرة سريعة على نطاق المنتجات",
-    "items": [
-      {
-        "label": "هيدروليك صناعي",
-        "value": "Mobil DTE 20 Series"
-      },
-      {
-        "label": "تروس صناعية",
-        "value": "Mobilgear 600 XP Series"
-      },
-      {
-        "label": "أسطول وشاحنات",
-        "value": "Mobil Delvac"
-      },
-      {
-        "label": "مراقبة الحالة",
-        "value": "تحليل زيوت Mobil Serv℠"
-      }
-    ]
-  },
   "why": {
     "eyebrow": "لماذا موبيليتي",
     "titlePrefix": "موزّع يعمل كجزء من",
