@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "title": "Mobility — Mobil Industrial & Fleet Lubricants in Egypt",
+    "description": "Your authorized Mobil distributor in Egypt. Industrial and fleet lubricants backed by local stock, field engineering, oil analysis, and practical lubrication support.",
+    "keywords": [
+      "Mobil distributor Egypt",
+      "industrial lubricants Egypt",
+      "Mobil Delvac",
+      "Mobil DTE",
+      "Mobilgear",
+      "oil analysis Egypt",
+      "fleet lubricants"
+    ]
+  },
+  "skipToContent": "Skip to content",
+  "brand": {
+    "name": "Mobility",
+    "tagline": "Mobil lubricants · Egypt",
+    "homeLabel": "Mobility home"
+  },
+  "nav": {
+    "why": "Why Mobility",
+    "products": "Products",
+    "services": "Services",
+    "coverage": "Coverage",
+    "contact": "Contact",
+    "primaryAria": "Primary navigation",
+    "mobileAria": "Mobile navigation",
+    "talkToSales": "Talk to sales",
+    "requestQuote": "Request a quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "eyebrow": "Industrial & fleet lubricants · Egypt",
+    "titlePrefix": "Your Authorized",
+    "titleBrand": "Mobil Distributor",
+    "titleSuffix": "in Egypt",
+    "lead": "More than just oils — we provide total engineering solutions.",
+    "body": "As an official Mobil distributor, we deliver authentic industrial lubrication, local warehousing, and expert technical support to help keep your operations running.",
+    "ctaPrimary": "Request a technical consultation",
+    "ctaSecondary": "Explore products",
+    "proof": [
+      "Local warehousing",
+      "Field engineering",
+      "Oil analysis",
+      "Fleet supply"
+    ],
+    "supportLine": "Supporting industrial and fleet operators in 10th of Ramadan, Obour, and across Egypt.",
+    "note": "Technical support from product selection to condition monitoring",
+    "panel": {
+      "topLeft": "Egypt operations",
+      "topRight": "Lubrication partnership",
+      "title": "One partner.",
+      "titleMuted": "Every application.",
+      "body": "Industrial, fleet, and marine lubricants backed by local stock and practical field expertise.",
+      "rows": [
+        {
+          "title": "Industrial & fleet portfolios",
+          "detail": "Mobil DTE · Mobilgear · Mobil Delvac"
+        },
+        {
+          "title": "Condition monitoring",
+          "detail": "Mobil Serv℠ Oil Analysis"
+        },
+        {
+          "title": "Local hubs & dispatch",
+          "detail": "Alexandria · 10th of Ramadan · Obour"
+        }
+      ],
+      "bottomLabel": "Built for uptime",
+      "bottomValue": "Supply, service, and support"
+    }
+  },
+  "range": {
+    "aria": "Product range at a glance",
+    "items": [
+      {
+        "label": "Industrial hydraulics",
+        "value": "Mobil DTE 20 Series"
+      },
+      {
+        "label": "Industrial gears",
+        "value": "Mobilgear 600 XP Series"
+      },
+      {
+        "label": "Fleet & commercial",
+        "value": "Mobil Delvac"
+      },
+      {
+        "label": "Condition monitoring",
+        "value": "Mobil Serv℠ Oil Analysis"
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Mobility",
+    "titlePrefix": "A distributor that acts like part of",
+    "titleHighlight": "your maintenance team.",
+    "description": "Product access is only the start. We combine local inventory, logistics, and lubrication engineering so you can specify with confidence and keep equipment productive.",
+    "link": "See our engineering services",
+    "cards": [
+      {
+        "title": "Local stock, protected product",
+        "description": "Dedicated storage and careful handling keep lubricants in condition from our warehouse to your line.",
+        "footnote": "Warehousing"
+      },
+      {
+        "title": "Alexandria logistics",
+        "description": "Amreya and Borg El Arab place inventory close to the port and the Delta's industrial corridor.",
+        "footnote": "Logistics"
+      },
+      {
+        "title": "Commercial flexibility",
+        "description": "Pricing, payment terms, and invoicing arrangements discussed around the needs of your account.",
+        "footnote": "Commercial"
+      },
+      {
+        "title": "Dispatch across hubs",
+        "description": "Stock points in 10th of Ramadan, Borg El Arab, Amreya, and Obour support planned, reliable dispatch.",
+        "footnote": "Supply"
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": "Product portfolios",
+    "titlePrefix": "Lubricants matched to the work,",
+    "titleHighlight": "not the shelf.",
+    "description": "Industrial and commercial-vehicle portfolios for defined applications. Our team helps you confirm the right grade, packaging, and current availability before you order.",
+    "tabsAria": "Product portfolios",
+    "tabs": {
+      "industrial": "Industrial lubricants",
+      "fleet": "Commercial & fleet"
+    },
+    "cta": "Request availability",
+    "note": "Product availability varies by hub. Confirm grades, packaging, and current stock with our team.",
+    "noteLink": "Ask about a grade →",
+    "portfolios": {
+      "industrial": [
+        {
+          "name": "Mobil DTE 20 Series",
+          "category": "Hydraulic oils",
+          "description": "Anti-wear hydraulic oils for high-pressure systems, precision machinery, and equipment that depends on clean, reliable hydraulic performance.",
+          "tags": [
+            "Hydraulics",
+            "Anti-wear",
+            "Vane & piston pumps"
+          ]
+        },
+        {
+          "name": "Mobilgear 600 XP Series",
+          "category": "Industrial gear oils",
+          "description": "Industrial gear oils formulated for enclosed gear drives operating under heavy loads and demanding industrial conditions.",
+          "tags": [
+            "Gearboxes",
+            "Heavy load",
+            "Industrial drives"
+          ]
+        }
+      ],
+      "fleet": [
+        {
+          "name": "Mobil Delvac MX 20W-50",
+          "category": "Mixed fleet",
+          "description": "Heavy-duty diesel engine oil for mixed fleets and older engines working in tough on-road and off-road conditions.",
+          "tags": [
+            "Mixed fleets",
+            "20W-50",
+            "Diesel"
+          ]
+        },
+        {
+          "name": "Mobil Delvac 1350",
+          "category": "Heavy-duty diesel",
+          "description": "A dependable heavy-duty diesel engine oil for demanding commercial service and high-load operating cycles.",
+          "tags": [
+            "Heavy-duty",
+            "Commercial",
+            "High load"
+          ]
+        },
+        {
+          "name": "Mobil Delvac Modern 15W-40",
+          "category": "Modern fleets",
+          "description": "Engine oil for modern diesel fleets and contemporary equipment, supported by our team's application guidance.",
+          "tags": [
+            "Modern fleets",
+            "15W-40",
+            "Diesel"
+          ]
+        }
+      ]
+    }
+  },
+  "services": {
+    "eyebrow": "Engineering services",
+    "titlePrefix": "Support that goes",
+    "titleHighlight": "beyond the drum.",
+    "description": "Product supply is the baseline. Our services help you choose correctly, monitor condition, and manage lubricants as part of a preventive-maintenance program.",
+    "cta": "Book a site survey",
+    "items": [
+      {
+        "title": "Mobil Serv℠ Oil Analysis",
+        "description": "Used-oil testing and interpretation that helps you spot wear, contamination, and changing fluid condition before they become maintenance surprises.",
+        "tags": [
+          "Wear metals",
+          "Viscosity",
+          "Contamination"
+        ]
+      },
+      {
+        "title": "Field Engineering & Site Surveys",
+        "description": "Qualified lubrication engineers review equipment applications on site and recommend the right product, practice, and change interval.",
+        "tags": [
+          "On-site review",
+          "Application mapping",
+          "Recommendations"
+        ]
+      },
+      {
+        "title": "TCO Optimization",
+        "description": "Lubricant-management programs designed to support longer oil life, controlled consumption, and more efficient maintenance planning.",
+        "tags": [
+          "Oil life",
+          "Consumption",
+          "Maintenance planning"
+        ]
+      },
+      {
+        "title": "Industrial Oil Filtration",
+        "description": "On-site filtration that removes contaminants and supports continued oil use where technically suitable for the system.",
+        "tags": [
+          "Contaminant removal",
+          "Oil reuse",
+          "On-site service"
+        ]
+      }
+    ],
+    "note": "Service scope and recommendations depend on equipment condition and operating practice. Our team confirms what applies to your site."
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "titlePrefix": "From first survey to",
+    "titleHighlight": "ongoing support.",
+    "description": "A straightforward process built around your equipment, your operating conditions, and your maintenance priorities.",
+    "stepLabel": "Step",
+    "steps": [
+      {
+        "title": "Survey",
+        "description": "We review equipment, applications, and current lubricants on site or remotely."
+      },
+      {
+        "title": "Recommend",
+        "description": "A clear product and practice recommendation, with availability confirmed."
+      },
+      {
+        "title": "Supply",
+        "description": "Planned dispatch from the nearest hub, with product integrity protected."
+      },
+      {
+        "title": "Monitor",
+        "description": "Oil analysis and follow-up reviews that support continuous improvement."
+      }
+    ]
+  },
+  "coverage": {
+    "eyebrow": "Coverage",
+    "titlePrefix": "Stock close to",
+    "titleHighlight": "where you operate.",
+    "description": "Our logistics hubs support industrial zones and free zones from Alexandria through the Delta and Greater Cairo. Tell us where you operate and we'll confirm product availability and delivery scope.",
+    "groups": [
+      {
+        "region": "Alexandria",
+        "note": "Port-adjacent storage",
+        "hubs": [
+          "Amreya",
+          "Borg El Arab"
+        ]
+      },
+      {
+        "region": "Delta & Greater Cairo",
+        "note": "Industrial corridor",
+        "hubs": [
+          "10th of Ramadan",
+          "Obour"
+        ]
+      }
+    ],
+    "marine": {
+      "title": "Marine & free-zone supply",
+      "description": "Marine operators and free-zone businesses can contact our team to confirm supply access and technical fit for their location."
+    },
+    "footnote": "Delivery scope is confirmed per product and location. The map is indicative and does not represent guaranteed coverage.",
+    "map": {
+      "aria": "Indicative map of Egypt showing logistics hubs in Alexandria and the Delta, including Amreya, Borg El Arab, 10th of Ramadan, and Obour",
+      "medSea": "MEDITERRANEAN SEA",
+      "redSea": "RED SEA",
+      "watermark": "EGYPT",
+      "pins": [
+        {
+          "name": "Alexandria",
+          "detail": "Amreya · Borg El Arab"
+        },
+        {
+          "name": "10th of Ramadan · Obour",
+          "detail": "Delta & Greater Cairo"
+        }
+      ],
+      "legendHub": "Logistics hub",
+      "legendNote": "Indicative — not to scale"
+    }
+  },
+  "contact": {
+    "eyebrow": "Request a quote",
+    "titlePrefix": "Tell us what",
+    "titleHighlight": "you're running.",
+    "description": "Share your equipment, sector, and location. Our team will come back with a product recommendation, availability, or a site-survey next step.",
+    "nextSteps": [
+      {
+        "title": "A product recommendation",
+        "description": "We check the right grade, packaging, and current availability for your equipment."
+      },
+      {
+        "title": "A technical next step",
+        "description": "Oil analysis, a site survey, or a conversation with our lubrication team."
+      },
+      {
+        "title": "Delivery scope",
+        "description": "Confirmation of supply and delivery for your location and product mix."
+      }
+    ],
+    "trustDetails": "Details used only to respond to your request",
+    "trustVisit": "Prefer a site visit? Mention it below",
+    "formTitle": "Request a quote or consultation",
+    "requiredNote": "Fields marked * are required.",
+    "labels": {
+      "fullName": "Full name *",
+      "company": "Company / factory / fleet *",
+      "email": "Work email",
+      "phone": "Phone number *",
+      "sector": "Industry sector *",
+      "location": "City / operating location",
+      "interest": "I'm interested in",
+      "message": "Primary request"
+    },
+    "placeholders": {
+      "fullName": "Your name",
+      "company": "Organisation name",
+      "email": "you@company.com",
+      "phone": "+20 1XX XXX XXXX",
+      "sector": "Select a sector",
+      "location": "e.g. 10th of Ramadan",
+      "interest": "Select a request type",
+      "message": "Equipment, grades, volumes, or the issue you're trying to solve."
+    },
+    "sectors": [
+      "Food manufacturing",
+      "Cement",
+      "Hydraulics & industrial machinery",
+      "Marine & ports",
+      "Transport & fleet",
+      "Free zone",
+      "Other"
+    ],
+    "interests": [
+      "Product quote",
+      "Technical consultation",
+      "Oil analysis",
+      "Site survey",
+      "Fleet supply program"
+    ],
+    "messageNote": "Optional, but it helps us route your request to the right specialist.",
+    "submit": "Send inquiry",
+    "pending": "Sending…",
+    "consent": "By submitting, you agree that Mobility may contact you about this request. We do not sell your details.",
+    "successTitle": "Thank you, {name}.",
+    "successTitleNoName": "Thank you.",
+    "successBody": "Your request is in. Our team will review the details and follow up with a recommendation or the next step.",
+    "reset": "Send another inquiry",
+    "fallbackName": "there",
+    "errors": {
+      "fullName": "Please enter your full name.",
+      "company": "Please enter your company name.",
+      "phone": "Please enter a phone number.",
+      "email": "Please enter a valid email address.",
+      "sector": "Please select a sector."
+    }
+  },
+  "footer": {
+    "description": "Mobil industrial and fleet lubricants supported by local stock, logistics, and practical lubrication engineering in Egypt.",
+    "cta": "Request a quote",
+    "columns": {
+      "products": "Products",
+      "services": "Services",
+      "coverage": "Coverage"
+    },
+    "productLinks": [
+      "Mobil DTE 20 Series",
+      "Mobilgear 600 XP Series",
+      "Mobil Delvac"
+    ],
+    "serviceLinks": [
+      "Oil analysis",
+      "Field engineering",
+      "TCO optimization",
+      "Oil filtration"
+    ],
+    "coverageLinks": [
+      "Amreya",
+      "Borg El Arab",
+      "10th of Ramadan",
+      "Obour"
+    ],
+    "copyright": "© 2026 Mobility. All rights reserved.",
+    "legal": "Mobil is a trademark of Exxon Mobil Corporation. Product availability, service scope, and delivery coverage are confirmed per order.",
+    "backToTop": "Back to top ↑"
+  }
+}
