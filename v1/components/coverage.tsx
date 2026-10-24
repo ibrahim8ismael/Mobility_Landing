@@ -177,12 +177,14 @@ function EgyptMap({ dict, isRtl }: { dict: Dictionary["coverage"]["map"]; isRtl:
         </text>
       </svg>
 
-      <div className="absolute bottom-4 start-4 flex max-w-[calc(100%-2rem)] flex-wrap items-center gap-2 rounded-full border border-white/60 bg-white/90 px-3 py-1.5 text-[0.6rem] font-medium text-slate-500 shadow-sm backdrop-blur">
-        <span className="size-1.5 rounded-full bg-mobil" />
-        {dict.legendHub}
-        <span className="mx-1 h-3 w-px bg-slate-300" />
-        {dict.legendNote}
-      </div>
+      {dict.legendHub || dict.legendNote ? (
+        <div className="absolute bottom-4 start-4 flex max-w-[calc(100%-2rem)] flex-wrap items-center gap-2 rounded-full border border-white/60 bg-white/90 px-3 py-1.5 text-[0.6rem] font-medium text-slate-500 shadow-sm backdrop-blur">
+          <span className="size-1.5 rounded-full bg-mobil" />
+          {dict.legendHub}
+          <span className="mx-1 h-3 w-px bg-slate-300" />
+          {dict.legendNote}
+        </div>
+      ) : null}
     </div>
   );
 }
