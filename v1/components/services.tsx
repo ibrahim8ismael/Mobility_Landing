@@ -1,7 +1,7 @@
 "use client";
 
-import { ArrowRight, ClipboardCheck, Filter, FlaskConical, TrendingDown } from "lucide-react";
-import { Button, Card, Chip } from "@heroui/react";
+import { ClipboardCheck, Filter, FlaskConical, TrendingDown } from "lucide-react";
+import { Card, Chip } from "@heroui/react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { SectionHeading } from "@/components/section-heading";
@@ -42,20 +42,6 @@ export function Services({ dict }: { dict: Dictionary["services"] }) {
             <p className="max-w-md text-base leading-relaxed text-white/65 lg:ms-auto">
               {dict.description}
             </p>
-            <div className="mt-6 lg:flex lg:justify-end">
-              <Button
-                variant="outline"
-                onPress={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth", block: "start" })
-                }
-                className="h-11 rounded-full border-white/25 bg-white/5 px-5 text-sm font-semibold text-white backdrop-blur-sm data-[hovered=true]:border-white/50 data-[hovered=true]:bg-white/10"
-              >
-                {dict.cta}
-                <ArrowRight className="size-4 rtl:-scale-x-100" aria-hidden="true" />
-              </Button>
-            </div>
           </Reveal>
         </div>
 
