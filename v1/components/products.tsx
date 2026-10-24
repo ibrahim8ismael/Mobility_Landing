@@ -2,6 +2,7 @@
 
 import { Cog, Droplet, Info, Truck } from "lucide-react";
 import { Card, Chip } from "@heroui/react";
+import Image from "next/image";
 
 import { Reveal } from "@/components/motion";
 import { SectionHeading } from "@/components/section-heading";
@@ -22,40 +23,53 @@ function ProductCard({ product }: { product: Product }) {
   const Icon = product.icon;
 
   return (
-    <Card className="group relative h-full gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_28px_56px_-30px_rgba(11,46,98,0.45)] sm:p-7">
+    <Card className="group relative h-full gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-0 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_28px_56px_-30px_rgba(11,46,98,0.45)]">
       <div className="pointer-events-none absolute -end-16 -top-16 size-44 rounded-full bg-[radial-gradient(circle,rgba(22,75,152,0.08),transparent_68%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-      <div className="flex items-start justify-between gap-4">
-        <span className="grid size-11 place-items-center rounded-2xl bg-blue-50 text-mobil transition-colors group-hover:bg-mobil group-hover:text-white">
-          <Icon className="size-5" strokeWidth={1.9} aria-hidden="true" />
-        </span>
-        <span className="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
-          {product.category}
-        </span>
+      <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f7fa]">
+        <Image
+          src="/mobil-dte-20-ultra-series-fs-square-md.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
+          className="object-contain p-4 mix-blend-multiply sm:p-5"
+        />
       </div>
 
-      <Card.Header className="mt-6 gap-0">
-        <Card.Title className="font-display text-[1.3rem] font-semibold leading-tight tracking-[-0.025em] text-ink">
-          {product.name}
-        </Card.Title>
-      </Card.Header>
-
-      <Card.Content className="mt-3 flex-1">
-        <p className="text-sm leading-relaxed text-slate-600">{product.description}</p>
-
-        <div className="mt-5 flex flex-wrap gap-1.5">
-          {product.tags.map((tag) => (
-            <Chip
-              key={tag}
-              size="sm"
-              variant="soft"
-              className="border border-slate-200 bg-mist px-2.5 text-[0.66rem] font-medium text-slate-600"
-            >
-              <Chip.Label>{tag}</Chip.Label>
-            </Chip>
-          ))}
+      <div className="relative flex h-full flex-col p-6 sm:p-7">
+        <div className="flex items-start justify-between gap-4">
+          <span className="grid size-11 place-items-center rounded-2xl bg-blue-50 text-mobil transition-colors group-hover:bg-mobil group-hover:text-white">
+            <Icon className="size-5" strokeWidth={1.9} aria-hidden="true" />
+          </span>
+          <span className="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
+            {product.category}
+          </span>
         </div>
-      </Card.Content>
+
+        <Card.Header className="mt-6 gap-0">
+          <Card.Title className="font-display text-[1.3rem] font-semibold leading-tight tracking-[-0.025em] text-ink">
+            {product.name}
+          </Card.Title>
+        </Card.Header>
+
+        <Card.Content className="mt-3 flex-1">
+          <p className="text-sm leading-relaxed text-slate-600">{product.description}</p>
+
+          <div className="mt-5 flex flex-wrap gap-1.5">
+            {product.tags.map((tag) => (
+              <Chip
+                key={tag}
+                size="sm"
+                variant="soft"
+                className="border border-slate-200 bg-mist px-2.5 text-[0.66rem] font-medium text-slate-600"
+              >
+                <Chip.Label>{tag}</Chip.Label>
+              </Chip>
+            ))}
+          </div>
+        </Card.Content>
+      </div>
     </Card>
   );
 }
