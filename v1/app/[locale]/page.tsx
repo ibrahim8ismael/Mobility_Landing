@@ -28,7 +28,7 @@ export default async function HomePage({
     <>
       <SiteHeader locale={locale} dict={dict.nav} brand={dict.brand} />
       <main id="main" className="flex-1">
-        <Hero dict={dict.hero} />
+        <Hero dict={dict.hero} locale={locale} />
         <WhyMobility dict={dict.why} />
         <Products dict={dict.products} />
         <Services dict={dict.services} />
