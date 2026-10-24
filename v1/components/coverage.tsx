@@ -247,26 +247,30 @@ export function Coverage({ locale, dict }: { locale: Locale; dict: Dictionary["c
               </Reveal>
             ))}
 
-            <Reveal delay={0.16}>
-              <div className="flex items-start gap-3 rounded-3xl border border-blue-100 bg-blue-50/60 p-5">
-                <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-white text-mobil">
-                  <Ship className="size-4" aria-hidden="true" />
-                </span>
-                <div>
-                  <p className="text-sm font-semibold text-ink">{dict.marine.title}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                    {dict.marine.description}
-                  </p>
+            {dict.marine.title || dict.marine.description ? (
+              <Reveal delay={0.16}>
+                <div className="flex items-start gap-3 rounded-3xl border border-blue-100 bg-blue-50/60 p-5">
+                  <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-white text-mobil">
+                    <Ship className="size-4" aria-hidden="true" />
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-ink">{dict.marine.title}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                      {dict.marine.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Reveal>
+              </Reveal>
+            ) : null}
 
-            <Reveal delay={0.2}>
-              <p className="flex items-start gap-2 px-1 text-xs leading-relaxed text-slate-500">
-                <Info className="mt-0.5 size-3.5 shrink-0 text-slate-400" aria-hidden="true" />
-                {dict.footnote}
-              </p>
-            </Reveal>
+            {dict.footnote ? (
+              <Reveal delay={0.2}>
+                <p className="flex items-start gap-2 px-1 text-xs leading-relaxed text-slate-500">
+                  <Info className="mt-0.5 size-3.5 shrink-0 text-slate-400" aria-hidden="true" />
+                  {dict.footnote}
+                </p>
+              </Reveal>
+            ) : null}
           </div>
 
           <Reveal delay={0.12}>
