@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+import { defaultLocale } from "./i18n/config";
+
 const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
@@ -9,7 +11,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/",
-        destination: "/en",
+        destination: `/${defaultLocale}`,
         permanent: false,
       },
     ];
