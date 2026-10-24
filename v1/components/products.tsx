@@ -86,7 +86,11 @@ export function Products({ dict }: { dict: Dictionary["products"] }) {
   return (
     <section id="products" className="relative bg-white py-20 sm:py-28">
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-        <div className="grid items-end gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div
+          className={`grid items-end gap-8 ${
+            dict.description ? "lg:grid-cols-[1.1fr_0.9fr]" : ""
+          }`}
+        >
           <Reveal>
             <SectionHeading
               eyebrow={dict.eyebrow}
@@ -97,11 +101,13 @@ export function Products({ dict }: { dict: Dictionary["products"] }) {
               }
             />
           </Reveal>
-          <Reveal delay={0.1}>
-            <p className="max-w-md text-base leading-relaxed text-slate-600 lg:ms-auto">
-              {dict.description}
-            </p>
-          </Reveal>
+          {dict.description ? (
+            <Reveal delay={0.1}>
+              <p className="max-w-md text-base leading-relaxed text-slate-600 lg:ms-auto">
+                {dict.description}
+              </p>
+            </Reveal>
+          ) : null}
         </div>
 
         <Reveal delay={0.12}>

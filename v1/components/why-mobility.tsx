@@ -25,10 +25,12 @@ export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
             />
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="max-w-md text-base leading-relaxed text-slate-600 lg:ms-auto">
-              {dict.description}
-            </p>
-            <div className="mt-5 lg:text-end">
+            {dict.description ? (
+              <p className="max-w-md text-base leading-relaxed text-slate-600 lg:ms-auto">
+                {dict.description}
+              </p>
+            ) : null}
+            <div className={`${dict.description ? "mt-5 " : ""}lg:text-end`}>
               <a
                 href="#services"
                 className="group inline-flex items-center gap-2 text-sm font-semibold text-mobil"
