@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ArrowUpRight, Cog, Droplet, Info, Truck } from "lucide-react";
+import { Cog, Droplet, Info, Truck } from "lucide-react";
 import { Card, Chip, Tabs } from "@heroui/react";
 
 import { Reveal } from "@/components/motion";
@@ -19,7 +19,7 @@ type Product = {
 const industrialIcons = [Droplet, Cog];
 const fleetIcons = [Truck, Truck, Truck];
 
-function ProductCard({ product, cta }: { product: Product; cta: string }) {
+function ProductCard({ product }: { product: Product }) {
   const Icon = product.icon;
 
   return (
@@ -57,16 +57,6 @@ function ProductCard({ product, cta }: { product: Product; cta: string }) {
           ))}
         </div>
       </Card.Content>
-
-      <Card.Footer className="mt-6 border-t border-slate-100 pt-4">
-        <a
-          href="#contact"
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-mobil transition-colors hover:text-mobil-deep"
-        >
-          {cta}
-          <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100" />
-        </a>
-      </Card.Footer>
     </Card>
   );
 }
@@ -142,7 +132,7 @@ export function Products({ dict }: { dict: Dictionary["products"] }) {
                   }`}
                 >
                   {portfolios[key].map((product) => (
-                    <ProductCard key={product.name} product={product} cta={dict.cta} />
+                    <ProductCard key={product.name} product={product} />
                   ))}
                 </motion.div>
               </Tabs.Panel>
