@@ -1,11 +1,18 @@
 import { ArrowUpRight, Handshake, Ship, Truck, Warehouse } from "lucide-react";
 import { Card } from "@heroui/react";
+import Image from "next/image";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { SectionHeading } from "@/components/section-heading";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 const icons = [Warehouse, Ship, Handshake, Truck];
+const cardImages = [
+  "/why-warehouse.jpg",
+  "/why-alexandria-logistics.jpg",
+  "/why-commercial-flexibility.jpg",
+  "/why-multi-hub-dispatch-v2.jpg",
+];
 
 export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
   return (
@@ -49,30 +56,45 @@ export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
             return (
               <StaggerItem key={card.title} className="h-full">
                 <Card
-                  className="group relative h-full gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_24px_48px_-28px_rgba(11,46,98,0.4)]"
+                  className="group relative h-full gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-0 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_24px_48px_-28px_rgba(11,46,98,0.4)]"
                   variant="default"
                 >
-                  <span className="absolute end-5 top-5 font-display text-[0.68rem] font-semibold tracking-[0.16em] text-slate-300">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <div className="relative h-40 overflow-hidden bg-slate-100 sm:h-44">
+                    <Image
+                      src={cardImages[index]}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1280px) 280px, (min-width: 1024px) 22vw, (min-width: 640px) 44vw, calc(100vw - 2.5rem)"
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                    <div
+                      className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-slate-950/10"
+                      aria-hidden="true"
+                    />
+                    <span className="absolute end-4 top-4 rounded-full border border-white/50 bg-white/90 px-2.5 py-1 font-display text-xs font-semibold tracking-[0.12em] text-mobil shadow-sm backdrop-blur-sm">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </div>
 
-                  <span className="grid size-11 place-items-center rounded-2xl bg-blue-50 text-mobil transition-colors group-hover:bg-mobil group-hover:text-white">
-                    <Icon className="size-5" strokeWidth={1.9} aria-hidden="true" />
-                  </span>
+                  <div className="flex flex-1 flex-col p-5 sm:p-6">
+                    <span className="grid size-11 place-items-center rounded-2xl bg-blue-50 text-mobil transition-colors group-hover:bg-mobil group-hover:text-white">
+                      <Icon className="size-5" strokeWidth={1.9} aria-hidden="true" />
+                    </span>
 
-                  <Card.Header className="mt-6 gap-0">
-                    <Card.Title className="font-display text-[1.05rem] font-semibold leading-snug tracking-[-0.01em] text-ink">
-                      {card.title}
-                    </Card.Title>
-                  </Card.Header>
+                    <Card.Header className="mt-5 gap-0">
+                      <Card.Title className="font-display text-[1.05rem] font-semibold leading-snug tracking-[-0.01em] text-ink">
+                        {card.title}
+                      </Card.Title>
+                    </Card.Header>
 
-                  <Card.Content className="mt-3 flex-1">
-                    <p className="text-sm leading-relaxed text-slate-600">{card.description}</p>
-                  </Card.Content>
+                    <Card.Content className="mt-3 flex-1">
+                      <p className="text-sm leading-relaxed text-slate-600">{card.description}</p>
+                    </Card.Content>
 
-                  <div className="mt-6 flex items-center gap-2 border-t border-slate-100 pt-4 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
-                    <span className="size-1 rounded-full bg-mobil-red" />
-                    {card.footnote}
+                    <div className="mt-6 flex items-center gap-2 border-t border-slate-100 pt-4 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      <span className="size-1 rounded-full bg-mobil-red" />
+                      {card.footnote}
+                    </div>
                   </div>
                 </Card>
               </StaggerItem>
