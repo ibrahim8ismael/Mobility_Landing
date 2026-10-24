@@ -90,10 +90,6 @@ export function Services({ dict }: { dict: Dictionary["services"] }) {
             );
           })}
         </Stagger>
-
-        <Reveal delay={0.1}>
-          <p className="mt-8 text-xs leading-relaxed text-white/40">{dict.note}</p>
-        </Reveal>
       </div>
     </section>
   );

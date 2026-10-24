@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { Contact } from "@/components/contact";
 import { Coverage } from "@/components/coverage";
 import { Hero } from "@/components/hero";
-import { Process } from "@/components/process";
 import { Products } from "@/components/products";
 import { Services } from "@/components/services";
 import { SiteFooter } from "@/components/site-footer";
@@ -33,7 +32,6 @@ export default async function HomePage({
         <WhyMobility dict={dict.why} />
         <Products dict={dict.products} />
         <Services dict={dict.services} />
-        <Process dict={dict.process} />
         <Coverage locale={locale} dict={dict.coverage} />
         <Contact locale={locale} dict={dict.contact} />
       </main>

@@ -167,74 +167,47 @@
     }
   },
   "services": {
-    "eyebrow": "Engineering services",
-    "titlePrefix": "Support that goes",
-    "titleHighlight": "beyond the drum.",
-    "description": "Product supply is the baseline. Our services help you choose correctly, monitor condition, and manage lubricants as part of a preventive-maintenance program.",
+    "eyebrow": "04 / Our Services",
+    "titlePrefix": "Expertise beyond",
+    "titleHighlight": "the product.",
+    "description": "Specialist engineering, oil analysis, optimization, and filtration services help protect equipment and improve lubrication performance.",
     "items": [
       {
         "title": "Mobil Serv℠ Oil Analysis",
-        "description": "Used-oil testing and interpretation that helps you spot wear, contamination, and changing fluid condition before they become maintenance surprises.",
+        "description": "Advanced, programmatic laboratory testing of your equipment’s used oil to diagnose internal wear and predict potential mechanical failures before they cause costly breakdowns, supporting predictive maintenance.",
         "tags": [
-          "Wear metals",
-          "Viscosity",
-          "Contamination"
+          "Predictive maintenance",
+          "Wear diagnosis",
+          "Failure prediction"
         ]
       },
       {
-        "title": "Field Engineering & Site Surveys",
-        "description": "Qualified lubrication engineers review equipment applications on site and recommend the right product, practice, and change interval.",
+        "title": "On-Site Field Engineering Services (FES) & Site Surveys",
+        "description": "Regular, scheduled visits by certified Lubrication Engineers (DLEs) to audit your facility, review machine applications, and recommend the optimal lubricant for every asset.",
         "tags": [
-          "On-site review",
-          "Application mapping",
-          "Recommendations"
+          "Facility audits",
+          "Application reviews",
+          "Lubricant recommendations"
         ]
       },
       {
-        "title": "TCO Optimization",
-        "description": "Lubricant-management programs designed to support longer oil life, controlled consumption, and more efficient maintenance planning.",
+        "title": "Total Cost of Ownership (TCO) Optimization",
+        "description": "Tailored programs designed to extend oil drain intervals, reduce overall lubricant consumption, and maximize your plant’s financial efficiency.",
         "tags": [
-          "Oil life",
-          "Consumption",
-          "Maintenance planning"
+          "Extended drain intervals",
+          "Lower consumption",
+          "Plant efficiency"
         ]
       },
       {
-        "title": "Industrial Oil Filtration",
-        "description": "On-site filtration that removes contaminants and supports continued oil use where technically suitable for the system.",
+        "title": "Industrial Oil Filtration Services",
+        "description": "Specialized on-site filtration solutions to purify in-service oils, remove contaminants, and drastically extend the operational lifespan of your machinery.",
         "tags": [
+          "Oil purification",
           "Contaminant removal",
-          "Oil reuse",
-          "On-site service"
+          "Machinery lifespan"
         ]
       }
-    ],
-    "note": "Service scope and recommendations depend on equipment condition and operating practice. Our team confirms what applies to your site."
-  },
-  "process": {
-    "eyebrow": "How we work",
-    "titlePrefix": "From first survey to",
-    "titleHighlight": "ongoing support.",
-    "description": "A straightforward process built around your equipment, your operating conditions, and your maintenance priorities.",
-    "stepLabel": "Step",
-    "steps": [
-      {
-        "title": "Survey",
-        "description": "We review equipment, applications, and current lubricants on site or remotely."
-      },
-      {
-        "title": "Recommend",
-        "description": "A clear product and practice recommendation, with availability confirmed."
-      },
-      {
-        "title": "Supply",
-        "description": "Planned dispatch from the nearest hub, with product integrity protected."
-      },
-      {
-        "title": "Monitor",
-        "description": "Oil analysis and follow-up reviews that support continuous improvement."
-      }
-    ]
   },
   "coverage": {
     "eyebrow": "Coverage",
