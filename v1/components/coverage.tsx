@@ -61,37 +61,35 @@ export function Coverage({ dict }: { dict: Dictionary["coverage"] }) {
 
         <div className="mt-12 grid items-start gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
           <div className="space-y-4">
-            {dict.groups.map((group, index) => (
-              <Reveal key={group.region} delay={index * 0.08}>
-                <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_2px_2px_rgba(11,27,48,0.02)]">
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
-                        {group.region}
-                      </h3>
-                      <p className="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
-                        {group.note}
-                      </p>
-                    </div>
-                    <span className="grid size-9 place-items-center rounded-xl bg-blue-50 text-mobil">
-                      <MapPin className="size-4" aria-hidden="true" />
-                    </span>
-                  </div>
+            <Reveal>
+              <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_2px_2px_rgba(11,27,48,0.02)] sm:p-7">
+                {dict.groups.map((group, index) => (
+                  <div
+                    key={group.region}
+                    className={index > 0 ? "mt-5 border-t border-slate-100 pt-5" : ""}
+                  >
+                    <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-ink">
+                      {group.region}
+                    </h3>
+                    <p className="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                      {group.note}
+                    </p>
 
-                  <div className="mt-5 grid gap-2 sm:grid-cols-2">
-                    {group.hubs.map((hub) => (
-                      <div
-                        key={hub}
-                        className="flex items-center gap-2.5 rounded-xl border border-slate-100 bg-mist px-3 py-2.5 text-sm font-medium text-slate-700"
-                      >
-                        <span className="size-1.5 rounded-full bg-mobil-red" />
-                        {hub}
-                      </div>
-                    ))}
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {group.hubs.map((hub) => (
+                        <span
+                          key={hub}
+                          className="inline-flex items-center gap-2 rounded-full border border-slate-100 bg-mist px-3 py-2 text-sm font-medium text-slate-700"
+                        >
+                          <MapPin className="size-3.5 shrink-0 text-mobil-red" aria-hidden="true" />
+                          {hub}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </Reveal>
-            ))}
+                ))}
+              </div>
+            </Reveal>
 
             {dict.marine.title || dict.marine.description ? (
               <Reveal delay={0.16}>
