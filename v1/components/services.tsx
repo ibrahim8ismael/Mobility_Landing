@@ -38,11 +38,13 @@ export function Services({ dict }: { dict: Dictionary["services"] }) {
               }
             />
           </Reveal>
-          <Reveal delay={0.1}>
-            <p className="max-w-md text-base leading-relaxed text-white/65 lg:ms-auto">
-              {dict.description}
-            </p>
-          </Reveal>
+          {dict.description ? (
+            <Reveal delay={0.1}>
+              <p className="max-w-md text-base leading-relaxed text-white/65 lg:ms-auto">
+                {dict.description}
+              </p>
+            </Reveal>
+          ) : null}
         </div>
 
         <Stagger className="mt-12 grid gap-4 md:grid-cols-2">
