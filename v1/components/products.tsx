@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "motion/react";
 import { Cog, Droplet, Info, Truck } from "lucide-react";
-import { Card, Chip, Tabs } from "@heroui/react";
+import { Card, Chip } from "@heroui/react";
 
 import { Reveal } from "@/components/motion";
 import { SectionHeading } from "@/components/section-heading";
@@ -62,16 +61,16 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export function Products({ dict }: { dict: Dictionary["products"] }) {
-  const portfolios: Record<"industrial" | "fleet", Product[]> = {
-    industrial: dict.portfolios.industrial.map((product, index) => ({
+  const products: Product[] = [
+    ...dict.portfolios.industrial.map((product, index) => ({
       ...product,
       icon: industrialIcons[index] ?? Droplet,
     })),
-    fleet: dict.portfolios.fleet.map((product, index) => ({
+    ...dict.portfolios.fleet.map((product, index) => ({
       ...product,
       icon: fleetIcons[index] ?? Truck,
     })),
-  };
+  ];
 
   return (
     <section id="products" className="relative bg-white py-20 sm:py-28">
@@ -101,43 +100,11 @@ export function Products({ dict }: { dict: Dictionary["products"] }) {
         </div>
 
         <Reveal delay={0.12}>
-          <Tabs defaultSelectedKey="industrial" className="mt-11">
-            <Tabs.ListContainer className="w-fit rounded-full border border-slate-200 bg-mist p-1">
-              <Tabs.List aria-label={dict.tabsAria} className="gap-1 p-0">
-                <Tabs.Tab
-                  id="industrial"
-                  className="h-9 whitespace-nowrap rounded-full px-5 text-sm font-semibold text-slate-500 data-[selected=true]:text-white"
-                >
-                  {dict.tabs.industrial}
-                  <Tabs.Indicator className="rounded-full bg-mobil shadow-[0_8px_18px_-10px_rgba(22,75,152,0.9)]" />
-                </Tabs.Tab>
-                <Tabs.Tab
-                  id="fleet"
-                  className="h-9 whitespace-nowrap rounded-full px-5 text-sm font-semibold text-slate-500 data-[selected=true]:text-white"
-                >
-                  {dict.tabs.fleet}
-                  <Tabs.Indicator className="rounded-full bg-mobil shadow-[0_8px_18px_-10px_rgba(22,75,152,0.9)]" />
-                </Tabs.Tab>
-              </Tabs.List>
-            </Tabs.ListContainer>
-
-            {(["industrial", "fleet"] as const).map((key) => (
-              <Tabs.Panel key={key} id={key} className="pt-7">
-                <motion.div
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                  className={`grid gap-4 ${
-                    portfolios[key].length === 2 ? "md:grid-cols-2 xl:grid-cols-2" : "md:grid-cols-3"
-                  }`}
-                >
-                  {portfolios[key].map((product) => (
-                    <ProductCard key={product.name} product={product} />
-                  ))}
-                </motion.div>
-              </Tabs.Panel>
+          <div className="mt-11 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {products.map((product) => (
+              <ProductCard key={product.name} product={product} />
             ))}
-          </Tabs>
+          </div>
         </Reveal>
 
         {dict.note && dict.noteLink ? (

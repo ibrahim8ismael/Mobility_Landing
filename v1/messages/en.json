@@ -107,11 +107,6 @@
     "titlePrefix": "Lubricants matched to the work,",
     "titleHighlight": "not the shelf.",
     "description": "Industrial and commercial-vehicle portfolios for defined applications. Our team helps you confirm the right grade, packaging, and current availability before you order.",
-    "tabsAria": "Product portfolios",
-    "tabs": {
-      "industrial": "Industrial lubricants",
-      "fleet": "Commercial & fleet"
-    },
     "note": "Product availability varies by hub. Confirm grades, packaging, and current stock with our team.",
     "noteLink": "Ask about a grade →",
     "portfolios": {
