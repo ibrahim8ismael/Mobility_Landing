@@ -8,10 +8,10 @@ import { SectionHeading } from "@/components/section-heading";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 const serviceImages = [
-  "/service-oil-analysis.jpg",
-  "/service-field-engineering.jpg",
-  "/service-tco-optimization.jpg",
-  "/service-oil-filtration.jpg",
+  "/service-truck-oil-analysis.jpg",
+  "/service-truck-field-engineering.jpg",
+  "/service-truck-fleet-management.jpg",
+  "/service-truck-oil-filtration.jpg",
 ];
 const mobilServName = "Mobil Serv℠";
 
