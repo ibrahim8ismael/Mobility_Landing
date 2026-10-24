@@ -150,20 +150,22 @@ export function Products({ dict }: { dict: Dictionary["products"] }) {
           </Tabs>
         </Reveal>
 
-        <Reveal delay={0.15}>
-          <div className="mt-8 flex flex-col gap-3 rounded-2xl border border-slate-200/80 bg-mist px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="flex items-start gap-2.5 text-sm text-slate-600">
-              <Info className="mt-0.5 size-4 shrink-0 text-mobil" aria-hidden="true" />
-              {dict.note}
-            </p>
-            <a
-              href="#contact"
-              className="shrink-0 text-sm font-semibold text-mobil hover:text-mobil-deep"
-            >
-              {dict.noteLink}
-            </a>
-          </div>
-        </Reveal>
+        {dict.note && dict.noteLink ? (
+          <Reveal delay={0.15}>
+            <div className="mt-8 flex flex-col gap-3 rounded-2xl border border-slate-200/80 bg-mist px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+              <p className="flex items-start gap-2.5 text-sm text-slate-600">
+                <Info className="mt-0.5 size-4 shrink-0 text-mobil" aria-hidden="true" />
+                {dict.note}
+              </p>
+              <a
+                href="#contact"
+                className="shrink-0 text-sm font-semibold text-mobil hover:text-mobil-deep"
+              >
+                {dict.noteLink}
+              </a>
+            </div>
+          </Reveal>
+        ) : null}
       </div>
     </section>
   );
