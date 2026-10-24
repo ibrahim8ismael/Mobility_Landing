@@ -55,6 +55,12 @@ export function UspStats({
       className="mt-4 grid grid-cols-2 gap-x-3 gap-y-8 border-t border-slate-200 bg-white px-2 py-8 sm:gap-x-1 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:py-12"
     >
       {items.map((item: Usp) => {
+        const textOnly = item.count === null && item.value.length === 0;
+        const valueClass = textOnly
+          ? "text-lg text-mobil sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
+          : item.count === null
+            ? "text-2xl text-mobil sm:text-3xl lg:text-3xl xl:text-[3rem] 2xl:text-[4rem]"
+            : "text-[2.5rem] sm:text-[3.1rem] lg:text-[3.5rem] xl:text-[4.35rem] 2xl:text-[5.75rem]";
         const accessibleValue =
           item.count === null
             ? item.value
@@ -62,15 +68,9 @@ export function UspStats({
 
         return (
           <li key={item.label} className="flex flex-col items-center justify-center px-1 text-center sm:px-2">
-            <p
-              className={`font-display font-light leading-none tracking-[-0.045em] ${
-                item.count === null
-                  ? "text-2xl text-mobil sm:text-3xl lg:text-3xl xl:text-[3rem] 2xl:text-[4rem]"
-                  : "text-[2.5rem] sm:text-[3.1rem] lg:text-[3.5rem] xl:text-[4.35rem] 2xl:text-[5.75rem]"
-              }`}
-            >
+            <p className={`font-display font-light leading-none tracking-[-0.045em] ${valueClass}`}>
               {item.count === null ? (
-                <span>{item.value}</span>
+                <span>{textOnly ? item.label : item.value}</span>
               ) : (
                 <>
                   <span
@@ -89,9 +89,11 @@ export function UspStats({
                 </>
               )}
             </p>
-            <p className="mt-3 max-w-[15rem] font-display text-sm leading-relaxed text-ink sm:text-base">
-              {item.label}
-            </p>
+            {!textOnly ? (
+              <p className="mt-3 max-w-[15rem] font-display text-sm leading-relaxed text-ink sm:text-base">
+                {item.label}
+              </p>
+            ) : null}
           </li>
         );
       })}
