@@ -234,7 +234,6 @@
     "eyebrow": "Coverage",
     "titlePrefix": "Stock close to",
     "titleHighlight": "where you operate.",
-    "description": "Our logistics hubs support industrial zones and free zones from Alexandria through the Delta and Greater Cairo. Tell us where you operate and we'll confirm product availability and delivery scope.",
     "groups": [
       {
         "region": "Alexandria",
@@ -259,22 +258,7 @@
     },
     "footnote": "Delivery scope is confirmed per product and location. The map is indicative and does not represent guaranteed coverage.",
     "map": {
-      "aria": "Indicative map of Egypt showing logistics hubs in Alexandria and the Delta, including Amreya, Borg El Arab, 10th of Ramadan, and Obour",
-      "medSea": "MEDITERRANEAN SEA",
-      "redSea": "RED SEA",
-      "watermark": "EGYPT",
-      "pins": [
-        {
-          "name": "Alexandria",
-          "detail": "Amreya · Borg El Arab"
-        },
-        {
-          "name": "10th of Ramadan · Obour",
-          "detail": "Delta & Greater Cairo"
-        }
-      ],
-      "legendHub": "Logistics hub",
-      "legendNote": "Indicative — not to scale"
+      "aria": "Illustrated logistics map with location markers"
     }
   },
   "contact": {

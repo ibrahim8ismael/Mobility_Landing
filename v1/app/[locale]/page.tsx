@@ -32,7 +32,7 @@ export default async function HomePage({
         <WhyMobility dict={dict.why} />
         <Products dict={dict.products} />
         <Services dict={dict.services} />
-        <Coverage locale={locale} dict={dict.coverage} />
+        <Coverage dict={dict.coverage} />
         <Contact locale={locale} dict={dict.contact} />
       </main>
       <SiteFooter brand={dict.brand} dict={dict.footer} />
