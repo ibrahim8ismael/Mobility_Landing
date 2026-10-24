@@ -265,21 +265,6 @@
     "eyebrow": "Request a quote",
     "titlePrefix": "Tell us what",
     "titleHighlight": "you're running.",
-    "description": "Share your equipment, sector, and location. Our team will come back with a product recommendation, availability, or a site-survey next step.",
-    "nextSteps": [
-      {
-        "title": "A product recommendation",
-        "description": "We check the right grade, packaging, and current availability for your equipment."
-      },
-      {
-        "title": "A technical next step",
-        "description": "Oil analysis, a site survey, or a conversation with our lubrication team."
-      },
-      {
-        "title": "Delivery scope",
-        "description": "Confirmation of supply and delivery for your location and product mix."
-      }
-    ],
     "trustDetails": "Details used only to respond to your request",
     "trustVisit": "Prefer a site visit? Mention it below",
     "formTitle": "Request a quote or consultation",

@@ -4,9 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import {
   ArrowRight,
   CheckCircle2,
-  ClipboardCheck,
   FlaskConical,
-  MapPin,
   PhoneCall,
   ShieldCheck,
 } from "lucide-react";
@@ -27,8 +25,6 @@ import {
 import { SectionHeading } from "@/components/section-heading";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
-
-const nextStepIcons = [ClipboardCheck, FlaskConical, MapPin];
 
 const fieldLabelClass = "text-xs font-semibold uppercase tracking-[0.1em] text-slate-500";
 
@@ -88,30 +84,9 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                     <span className="text-white/55">{dict.titleHighlight}</span>
                   </>
                 }
-                description={dict.description}
               />
 
-              <div className="mt-9 space-y-5">
-                {dict.nextSteps.map((step, index) => {
-                  const Icon = nextStepIcons[index] ?? ClipboardCheck;
-
-                  return (
-                    <div key={step.title} className="flex gap-3.5">
-                      <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-xl border border-white/10 bg-white/[0.07] text-white/80">
-                        <Icon className="size-4" strokeWidth={1.9} aria-hidden="true" />
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-white">{step.title}</p>
-                        <p className="mt-1 max-w-sm text-sm leading-relaxed text-white/55">
-                          {step.description}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-xs text-white/45">
+              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-xs text-white/45">
                 <span className="inline-flex items-center gap-2">
                   <ShieldCheck className="size-4" aria-hidden="true" />
                   {dict.trustDetails}
