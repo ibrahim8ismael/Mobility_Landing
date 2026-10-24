@@ -59,7 +59,7 @@ export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
                   className="group relative h-full gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-0 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_24px_48px_-28px_rgba(11,46,98,0.4)]"
                   variant="default"
                 >
-                  <div className="relative h-40 overflow-hidden bg-slate-100 sm:h-44">
+                  <div className="relative h-52 overflow-hidden bg-slate-100 sm:h-60">
                     <Image
                       src={cardImages[index]}
                       alt=""
@@ -90,11 +90,6 @@ export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
                     <Card.Content className="mt-3 flex-1">
                       <p className="text-sm leading-relaxed text-slate-600">{card.description}</p>
                     </Card.Content>
-
-                    <div className="mt-6 flex items-center gap-2 border-t border-slate-100 pt-4 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
-                      <span className="size-1 rounded-full bg-mobil-red" />
-                      {card.footnote}
-                    </div>
                   </div>
                 </Card>
               </StaggerItem>

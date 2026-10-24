@@ -106,23 +106,19 @@
     "cards": [
       {
         "title": "Local stock, protected product",
-        "description": "Dedicated storage and careful handling keep lubricants in condition from our warehouse to your line.",
-        "footnote": "Warehousing"
+        "description": "Dedicated storage and careful handling keep lubricants in condition from our warehouse to your line."
       },
       {
         "title": "Alexandria logistics",
-        "description": "Amreya and Borg El Arab place inventory close to the port and the Delta's industrial corridor.",
-        "footnote": "Logistics"
+        "description": "Amreya and Borg El Arab place inventory close to the port and the Delta's industrial corridor."
       },
       {
         "title": "Commercial flexibility",
-        "description": "Pricing, payment terms, and invoicing arrangements discussed around the needs of your account.",
-        "footnote": "Commercial"
+        "description": "Pricing, payment terms, and invoicing arrangements discussed around the needs of your account."
       },
       {
         "title": "Dispatch across hubs",
-        "description": "Stock points in 10th of Ramadan, Borg El Arab, Amreya, and Obour support planned, reliable dispatch.",
-        "footnote": "Supply"
+        "description": "Stock points in 10th of Ramadan, Borg El Arab, Amreya, and Obour support planned, reliable dispatch."
       }
     ]
   },
