@@ -39,6 +39,21 @@
     "titleSuffix": "in Egypt…",
     "lead": "More than just oils. We provide total engineering solutions!",
     "body": "As a trusted official Mobil distributor, we deliver 100% authentic industrial lubrication, unmatched local warehousing, and expert technical support to keep your operations running seamlessly.",
+    "uspAriaLabel": "Mobility at a glance",
+    "usps": [
+      {
+        "value": "2,000+",
+        "label": "Industrial & Fleet Clients"
+      },
+      {
+        "value": "48-Hour",
+        "label": "Rapid Delivery Guarantee"
+      },
+      {
+        "value": "Nationwide Coverage",
+        "label": "Across Egypt"
+      }
+    ],
     "ctaPrimary": "Contact us",
     "ctaSecondary": "Explore products",
     "proof": [

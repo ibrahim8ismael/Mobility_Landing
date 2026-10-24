@@ -66,6 +66,25 @@ export function Hero({ dict }: { dict: Dictionary["hero"] }) {
           </a>
         </div>
       </div>
+
+      <ul
+        aria-label={dict.uspAriaLabel}
+        className="mt-3 grid gap-2.5 sm:grid-cols-3 sm:gap-3"
+      >
+        {dict.usps.map((usp) => (
+          <li
+            key={usp.value}
+            className="flex min-h-20 flex-col justify-center gap-1 rounded-2xl border border-slate-200/80 bg-white px-5 py-3.5 shadow-[0_8px_24px_-20px_rgba(11,46,98,0.35)] sm:min-h-28 sm:px-6 sm:py-5"
+          >
+            <p className="font-display text-xl font-bold leading-tight tracking-[-0.025em] text-mobil sm:text-2xl lg:text-[1.75rem]">
+              {usp.value}
+            </p>
+            <p className="text-sm font-medium leading-snug text-ink/75 sm:text-[0.92rem]">
+              {usp.label}
+            </p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
