@@ -57,9 +57,9 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
     : dict.successTitleNoName;
 
   return (
-    <section id="contact" className="relative bg-white py-20 sm:py-28">
+    <section id="contact" className="relative bg-white py-12 sm:py-28">
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-        <div className="relative overflow-hidden rounded-[2rem] bg-mobil-deep px-6 py-10 sm:rounded-[2.5rem] sm:px-10 sm:py-12 lg:px-14 lg:py-16">
+        <div className="relative overflow-hidden rounded-[2rem] bg-mobil-deep px-4 py-8 sm:rounded-[2.5rem] sm:px-10 sm:py-12 lg:px-14 lg:py-16">
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.12]"
             style={{
@@ -73,7 +73,7 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
           <div className="pointer-events-none absolute -left-32 top-0 size-[460px] rounded-full bg-[radial-gradient(circle,rgba(52,120,214,0.35),transparent_65%)]" />
           <div className="pointer-events-none absolute -bottom-40 right-10 size-[380px] rounded-full bg-[radial-gradient(circle,rgba(227,27,52,0.14),transparent_65%)]" />
 
-          <div className="relative grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14">
+          <div className="relative grid min-w-0 gap-6 sm:gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14">
             <div className="lg:pt-2">
               <SectionHeading
                 eyebrow={dict.eyebrow}
@@ -86,19 +86,25 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                 }
               />
 
-              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-xs text-white/45">
-                <span className="inline-flex items-center gap-2">
-                  <ShieldCheck className="size-4" aria-hidden="true" />
-                  {dict.trustDetails}
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <PhoneCall className="size-4" aria-hidden="true" />
-                  {dict.trustVisit}
-                </span>
-              </div>
+              {(dict.trustDetails || dict.trustVisit) && (
+                <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-xs text-white/45">
+                  {dict.trustDetails ? (
+                    <span className="inline-flex items-center gap-2">
+                      <ShieldCheck className="size-4" aria-hidden="true" />
+                      {dict.trustDetails}
+                    </span>
+                  ) : null}
+                  {dict.trustVisit ? (
+                    <span className="inline-flex items-center gap-2">
+                      <PhoneCall className="size-4" aria-hidden="true" />
+                      {dict.trustVisit}
+                    </span>
+                  ) : null}
+                </div>
+              )}
             </div>
 
-            <div className="rounded-3xl bg-white p-5 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.45)] sm:p-7">
+            <div className="min-w-0 w-full rounded-3xl bg-white p-4 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.45)] sm:p-7">
               <AnimatePresence mode="wait" initial={false}>
                 {submitted ? (
                   <motion.div
@@ -147,7 +153,7 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                     </div>
 
                     <Form className="mt-6 flex flex-col gap-4" onSubmit={handleSubmit}>
-                      <div className="grid gap-4 sm:grid-cols-2">
+                      <div className="grid gap-4 md:grid-cols-2">
                         <TextField
                           isRequired
                           name="fullName"
@@ -174,7 +180,7 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                         </TextField>
                       </div>
 
-                      <div className="grid gap-4 sm:grid-cols-2">
+                      <div className="grid gap-4 md:grid-cols-2">
                         <TextField
                           name="email"
                           type="email"
@@ -211,7 +217,7 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                         </TextField>
                       </div>
 
-                      <div className="grid gap-4 sm:grid-cols-2">
+                      <div className="grid gap-4 md:grid-cols-2">
                         <Select
                           isRequired
                           name="sector"

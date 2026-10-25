@@ -186,6 +186,10 @@
       ]
     }
   },
+  "customers": {
+    "title": "Our Customers",
+    "ariaLabel": "Customer logos"
+  },
   "services": {
     "eyebrow": "04 / Our Services",
     "titlePrefix": "Expertise beyond",
@@ -324,11 +328,9 @@
   },
   "footer": {
     "description": "Mobil industrial and fleet lubricants supported by local stock, logistics, and practical lubrication engineering in Egypt.",
-    "cta": "Request a quote",
     "columns": {
       "products": "Products",
-      "services": "Services",
-      "coverage": "Coverage"
+      "services": "Services"
     },
     "productLinks": [
       "Mobil DTE 20 Series",
@@ -340,15 +342,6 @@
       "Field engineering",
       "TCO optimization",
       "Oil filtration"
-    ],
-    "coverageLinks": [
-      "Amreya",
-      "Borg El Arab",
-      "10th of Ramadan",
-      "Obour"
-    ],
-    "copyright": "© 2026 Mobility. All rights reserved.",
-    "legal": "Mobil is a trademark of Exxon Mobil Corporation. Product availability, service scope, and delivery coverage are confirmed per order.",
-    "backToTop": "Back to top ↑"
+    ]
   }
 }
