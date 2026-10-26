@@ -13,15 +13,15 @@ export function Hero({ dict, locale }: { dict: Dictionary["hero"]; locale: Local
   };
   const { props: desktopImageProps } = getImageProps({
     ...commonImageProps,
-    src: "/Mechanic%20Opening%20a%20Mobil%201%20Oil%20Bottle.png",
-    width: 1774,
-    height: 887,
+    src: "/factory-maintenance-hero.png",
+    width: 1672,
+    height: 941,
   });
   const { props: mobileImageProps } = getImageProps({
     ...commonImageProps,
-    src: "/Mechanic%20opening%20two%20Mobil%201%20bottles.png",
-    width: 941,
-    height: 1672,
+    src: "/factory-maintenance-hero-mobile.png",
+    width: 1024,
+    height: 1536,
   });
 
   return (
@@ -39,7 +39,7 @@ export function Hero({ dict, locale }: { dict: Dictionary["hero"]; locale: Local
           <img
             {...desktopImageProps}
             fetchPriority="high"
-            className="h-full w-full object-cover object-[53%_center]"
+            className="h-full w-full object-cover object-[68%_center] sm:object-[53%_center]"
           />
         </picture>
         <div className="hero-image-shade absolute inset-0" aria-hidden="true" />
