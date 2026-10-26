@@ -5,6 +5,7 @@ import { Coverage } from "@/components/coverage";
 import { CustomerLogos } from "@/components/customer-logos";
 import { Hero } from "@/components/hero";
 import { Products } from "@/components/products";
+import { Recognition } from "@/components/recognition";
 import { Services } from "@/components/services";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -33,6 +34,7 @@ export default async function HomePage({
         <WhyMobility dict={dict.why} />
         <Products dict={dict.products} />
         <CustomerLogos dict={dict.customers} />
+        <Recognition dict={dict.recognition} />
         <Services dict={dict.services} />
         <Coverage dict={dict.coverage} />
         <Contact locale={locale} dict={dict.contact} />

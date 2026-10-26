@@ -81,15 +81,11 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
           >
             <span className="relative block h-8 w-[132px] shrink-0 overflow-hidden sm:h-10 sm:w-[164px]" aria-hidden="true">
               <Image
-                src="/mobility-wordmark.png"
+                src="/mobility-wordmark-colorful-o.png"
                 alt=""
                 fill
                 sizes="(min-width: 640px) 164px, 132px"
                 className="object-cover"
-                style={{
-                  filter:
-                    "drop-shadow(1px 0 #164b98) drop-shadow(-1px 0 #164b98) drop-shadow(0 1px #164b98) drop-shadow(0 -1px #164b98)",
-                }}
                 priority
               />
             </span>

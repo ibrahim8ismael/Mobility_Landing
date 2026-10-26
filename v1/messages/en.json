@@ -160,6 +160,25 @@
     "title": "Our Customers",
     "ariaLabel": "Customer logos"
   },
+  "recognition": {
+    "title": "Mobility Global Recognition: The Circle of Excellence",
+    "subtitle": "Pioneering AI & Marketing Innovation in Egypt’s Oil Market",
+    "imageAlt": "Circle of Excellence 2025 Gold Award plaque",
+    "points": [
+      {
+        "title": "International Triumph:",
+        "description": "Mobility earned the prestigious Circle of Excellence Award in Italy, standing out among top industry competitors across Europe, the Middle East, and Africa."
+      },
+      {
+        "title": "First in Marketing & AI:",
+        "description": "We proudly stand as the first distributor in Egypt to win this global recognition for harnessing artificial intelligence and advanced marketing to drive market growth."
+      },
+      {
+        "title": "Your Trusted Partner:",
+        "description": "This milestone guarantees that your business is backed by an elite, tech-driven leader dedicated to top-tier performance and 100% authentic Mobil quality."
+      }
+    ]
+  },
   "services": {
     "eyebrow": "",
     "titlePrefix": "4. Our Services (Expertise Beyond Product)",
