@@ -98,90 +98,60 @@
     }
   },
   "why": {
-    "eyebrow": "Why Mobility",
-    "titlePrefix": "A distributor that acts like part of",
-    "titleHighlight": "your maintenance team.",
-    "description": "Product access is only the start. We combine local inventory, logistics, and lubrication engineering so you can specify with confidence and keep equipment productive.",
-    "link": "See our engineering services",
+    "eyebrow": "",
+    "titlePrefix": "2. Why Mobility?",
+    "titleHighlight": "",
+    "description": "",
+    "link": "",
     "cards": [
       {
-        "title": "Local stock, protected product",
-        "description": "Dedicated storage and careful handling keep lubricants in condition from our warehouse to your line."
+        "title": "1. Direct Storage Inside ExxonMobil Warehouses",
+        "description": "We are the only distributor in Egypt operating dedicated warehouses located directly inside ExxonMobil’s own facilities which ensures absolute product integrity."
       },
       {
-        "title": "Alexandria logistics",
-        "description": "Amreya and Borg El Arab place inventory close to the port and the Delta's industrial corridor."
+        "title": "2. Strategic Alexandria Location",
+        "description": "Operating out of Amreya and Borg El Arab, our Alexandria facilities are the closest to the port, offering unbeatable logistics advantages."
       },
       {
-        "title": "Commercial flexibility",
-        "description": "Pricing, payment terms, and invoicing arrangements discussed around the needs of your account."
+        "title": "3. Competitive & Flexible Financial Plans:",
+        "description": "Leveraging advanced digital infrastructure and lean administrative overhead, we offer highly competitive pricing structures, flexible payment terms, and the option to settle invoices in foreign currencies."
       },
       {
-        "title": "Dispatch across hubs",
-        "description": "Stock points in 10th of Ramadan, Borg El Arab, Amreya, and Obour support planned, reliable dispatch."
+        "title": "4. Rapid Response & Guaranteed Inventory:",
+        "description": "Strategic logistics hubs in 10th of Ramadan, Borg El Arab, Amreya, and Obour ensure immediate stock availability and fast dispatch to eliminate costly plant downtime."
       }
     ]
   },
   "products": {
-    "eyebrow": "Product portfolios",
-    "titlePrefix": "Lubricants matched to the work,",
-    "titleHighlight": "not the shelf.",
-    "description": "Industrial and commercial-vehicle portfolios for defined applications. Our team helps you confirm the right grade, packaging, and current availability before you order.",
-    "note": "Product availability varies by hub. Confirm grades, packaging, and current stock with our team.",
-    "noteLink": "Ask about a grade →",
+    "eyebrow": "",
+    "titlePrefix": "3. Core Product Portfolios",
+    "titleHighlight": "",
+    "description": "",
+    "note": "",
+    "noteLink": "",
     "portfolios": {
       "industrial": [
         {
           "name": "Mobil DTE 20 Series",
-          "category": "Hydraulic oils",
-          "description": "Anti-wear hydraulic oils for high-pressure systems, precision machinery, and equipment that depends on clean, reliable hydraulic performance.",
-          "tags": [
-            "Hydraulics",
-            "Anti-wear",
-            "Vane & piston pumps"
-          ]
+          "category": "Industrial Excellence"
         },
         {
           "name": "Mobilgear 600 XP Series",
-          "category": "Industrial gear oils",
-          "description": "Industrial gear oils formulated for enclosed gear drives operating under heavy loads and demanding industrial conditions.",
-          "tags": [
-            "Gearboxes",
-            "Heavy load",
-            "Industrial drives"
-          ]
+          "category": "Industrial Excellence"
         }
       ],
       "fleet": [
         {
           "name": "Mobil Delvac MX 20W-50",
-          "category": "Mixed fleet",
-          "description": "Heavy-duty diesel engine oil for mixed fleets and older engines working in tough on-road and off-road conditions.",
-          "tags": [
-            "Mixed fleets",
-            "20W-50",
-            "Diesel"
-          ]
+          "category": "Commercial & Fleet Powerhouses:"
         },
         {
-          "name": "Mobil Delvac 1350",
-          "category": "Heavy-duty diesel",
-          "description": "A dependable heavy-duty diesel engine oil for demanding commercial service and high-load operating cycles.",
-          "tags": [
-            "Heavy-duty",
-            "Commercial",
-            "High load"
-          ]
+          "name": "Mobil Delvac 1350 \"The Legend\"",
+          "category": "Commercial & Fleet Powerhouses:"
         },
         {
           "name": "Mobil Delvac Modern 15W-40",
-          "category": "Modern fleets",
-          "description": "Engine oil for modern diesel fleets and contemporary equipment, supported by our team's application guidance.",
-          "tags": [
-            "Modern fleets",
-            "15W-40",
-            "Diesel"
-          ]
+          "category": "Commercial & Fleet Powerhouses:"
         }
       ]
     }
@@ -191,46 +161,26 @@
     "ariaLabel": "Customer logos"
   },
   "services": {
-    "eyebrow": "04 / Our Services",
-    "titlePrefix": "Expertise beyond",
-    "titleHighlight": "the product.",
-    "description": "Specialist engineering, oil analysis, optimization, and filtration services help protect equipment and improve lubrication performance.",
+    "eyebrow": "",
+    "titlePrefix": "4. Our Services (Expertise Beyond Product)",
+    "titleHighlight": "",
+    "description": "",
     "items": [
       {
-        "title": "Mobil Serv℠ Oil Analysis",
-        "description": "Advanced, programmatic laboratory testing of your equipment’s used oil to diagnose internal wear and predict potential mechanical failures before they cause costly breakdowns, supporting predictive maintenance.",
-        "tags": [
-          "Predictive maintenance",
-          "Wear diagnosis",
-          "Failure prediction"
-        ]
+        "title": "Mobil Serv Oil Analysis:",
+        "description": "Advanced programmatic lab testing of your equipment's used oil to diagnose internal wear and predict potential mechanical failures before they cause costly breakdowns (Predictive Maintenance)."
       },
       {
-        "title": "On-Site Field Engineering Services (FES) & Site Surveys",
-        "description": "Regular, scheduled visits by certified Lubrication Engineers (DLEs) to audit your facility, review machine applications, and recommend the optimal lubricant for every asset.",
-        "tags": [
-          "Facility audits",
-          "Application reviews",
-          "Lubricant recommendations"
-        ]
+        "title": "On-Site Field Engineering Services (FES) & Site Surveys:",
+        "description": "Regular, scheduled visits by certified Lubrication Engineers (DLEs) to audit your facility, review machine applications, and recommend the exact optimal lubricant for every asset."
       },
       {
-        "title": "Total Cost of Ownership (TCO) Optimization",
-        "description": "Tailored programs designed to extend oil drain intervals, reduce overall lubricant consumption, and maximize your plant’s financial efficiency.",
-        "tags": [
-          "Extended drain intervals",
-          "Lower consumption",
-          "Plant efficiency"
-        ]
+        "title": "Total Cost of Ownership (TCO) Optimization:",
+        "description": "Tailored programs designed to extend oil drain intervals, reduce overall lubricant consumption, and maximize your plant’s financial efficiency."
       },
       {
-        "title": "Industrial Oil Filtration Services",
-        "description": "Specialized on-site filtration solutions to purify in-service oils, remove contaminants, and drastically extend the operational lifespan of your machinery.",
-        "tags": [
-          "Oil purification",
-          "Contaminant removal",
-          "Machinery lifespan"
-        ]
+        "title": "Industrial Oil Filtration Services:",
+        "description": "Specialized on-site filtration solutions to purify in-service oils, remove contaminants, and drastically extend the operational lifespan of your machinery."
       }
     ]
   },

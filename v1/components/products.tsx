@@ -1,7 +1,7 @@
 "use client";
 
 import { Cog, Droplet, Info, Truck } from "lucide-react";
-import { Card, Chip } from "@heroui/react";
+import { Card } from "@heroui/react";
 import Image from "next/image";
 
 import { Reveal } from "@/components/motion";
@@ -11,8 +11,6 @@ import type { Dictionary } from "@/i18n/dictionaries";
 type Product = {
   name: string;
   category: string;
-  description: string;
-  tags: string[];
   icon: typeof Droplet;
 };
 
@@ -42,7 +40,7 @@ function ProductCard({ product }: { product: Product }) {
           <span className="grid size-11 place-items-center rounded-2xl bg-blue-50 text-mobil transition-colors group-hover:bg-mobil group-hover:text-white">
             <Icon className="size-5" strokeWidth={1.9} aria-hidden="true" />
           </span>
-          <span className="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-400">
+          <span className="text-xs font-semibold text-slate-500">
             {product.category}
           </span>
         </div>
@@ -53,22 +51,6 @@ function ProductCard({ product }: { product: Product }) {
           </Card.Title>
         </Card.Header>
 
-        <Card.Content className="mt-3 flex-1">
-          <p className="text-sm leading-relaxed text-slate-600">{product.description}</p>
-
-          <div className="mt-5 flex flex-wrap gap-1.5">
-            {product.tags.map((tag) => (
-              <Chip
-                key={tag}
-                size="sm"
-                variant="soft"
-                className="border border-slate-200 bg-mist px-2.5 text-[0.66rem] font-medium text-slate-600"
-              >
-                <Chip.Label>{tag}</Chip.Label>
-              </Chip>
-            ))}
-          </div>
-        </Card.Content>
       </div>
     </Card>
   );

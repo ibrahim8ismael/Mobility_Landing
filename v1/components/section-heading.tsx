@@ -25,12 +25,14 @@ export function SectionHeading({
 
   return (
     <div className={`${isCenter ? "mx-auto text-center" : ""} ${className}`}>
-      <div
-        className={`flex items-center gap-3 ${isCenter ? "justify-center" : ""} ${eyebrowColor}`}
-      >
-        <span className={`h-px w-8 ${lineColor}`} />
-        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.22em]">{eyebrow}</span>
-      </div>
+      {eyebrow ? (
+        <div
+          className={`flex items-center gap-3 ${isCenter ? "justify-center" : ""} ${eyebrowColor}`}
+        >
+          <span className={`h-px w-8 ${lineColor}`} />
+          <span className="text-[0.68rem] font-semibold uppercase tracking-[0.22em]">{eyebrow}</span>
+        </div>
+      ) : null}
       <h2
         className={`mt-5 max-w-2xl font-display text-3xl font-semibold leading-[1.08] tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] ${titleColor} ${
           isCenter ? "mx-auto" : ""

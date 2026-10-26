@@ -37,15 +37,17 @@ export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
                 {dict.description}
               </p>
             ) : null}
-            <div className={`${dict.description ? "mt-5 " : ""}lg:text-end`}>
-              <a
-                href="#services"
-                className="group inline-flex items-center gap-2 text-sm font-semibold text-mobil"
-              >
-                {dict.link}
-                <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100" />
-              </a>
-            </div>
+            {dict.link ? (
+              <div className={`${dict.description ? "mt-5 " : ""}lg:text-end`}>
+                <a
+                  href="#services"
+                  className="group inline-flex items-center gap-2 text-sm font-semibold text-mobil"
+                >
+                  {dict.link}
+                  <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100" />
+                </a>
+              </div>
+            ) : null}
           </Reveal>
         </div>
 
@@ -71,9 +73,6 @@ export function WhyMobility({ dict }: { dict: Dictionary["why"] }) {
                       className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-slate-950/10"
                       aria-hidden="true"
                     />
-                    <span className="absolute end-4 top-4 rounded-full border border-white/50 bg-white/90 px-2.5 py-1 font-display text-xs font-semibold tracking-[0.12em] text-mobil shadow-sm backdrop-blur-sm">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
                   </div>
 
                   <div className="flex flex-1 flex-col p-5 sm:p-6">

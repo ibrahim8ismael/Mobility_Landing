@@ -71,10 +71,6 @@ export function Services({ dict }: { dict: Dictionary["services"] }) {
                       className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/5 to-slate-950/95"
                       aria-hidden="true"
                     />
-                    <span className="absolute end-5 top-5 rounded-full border border-white/35 bg-slate-950/25 px-3 py-1.5 font-display text-xs font-semibold tracking-[0.12em] text-white backdrop-blur-sm">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-
                     <div className="absolute inset-x-0 bottom-0 z-10 flex items-end justify-between gap-4 p-5 sm:p-6">
                       <h3
                         dir="auto"
@@ -93,16 +89,6 @@ export function Services({ dict }: { dict: Dictionary["services"] }) {
                   <p className="text-sm leading-relaxed text-slate-600 sm:text-[0.92rem]">
                     {service.description}
                   </p>
-                  <ul className="mt-4 flex flex-wrap gap-1.5">
-                    {service.tags.map((tag) => (
-                      <li
-                        key={tag}
-                        className="rounded-full border border-slate-200 bg-mist px-2.5 py-1 text-[0.62rem] font-medium leading-tight text-slate-600"
-                      >
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </details>
             </StaggerItem>
