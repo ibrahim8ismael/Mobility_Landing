@@ -221,27 +221,21 @@
     "titleHighlight": "you're running.",
     "trustDetails": "Details used only to respond to your request",
     "trustVisit": "Prefer a site visit? Mention it below",
-    "formTitle": "Request a quote or consultation",
+    "formTitle": "Lead Capture Form",
     "requiredNote": "Fields marked * are required.",
     "labels": {
       "fullName": "Full name *",
-      "company": "Company / factory / fleet *",
-      "email": "Work email",
+      "company": "Company / Factory / Fleet Name *",
       "phone": "Phone number *",
       "sector": "Industry sector *",
-      "location": "City / operating location",
-      "interest": "I'm interested in",
-      "message": "Primary request"
+      "message": "Primary request (optional)"
     },
     "placeholders": {
       "fullName": "Your name",
-      "company": "Organisation name",
-      "email": "you@company.com",
+      "company": "Company / factory / fleet name",
       "phone": "+20 1XX XXX XXXX",
       "sector": "Select a sector",
-      "location": "e.g. 10th of Ramadan",
-      "interest": "Select a request type",
-      "message": "Equipment, grades, volumes, or the issue you're trying to solve."
+      "message": "Tell us what you need help with."
     },
     "sectors": [
       "Food manufacturing",
@@ -252,14 +246,6 @@
       "Free zone",
       "Other"
     ],
-    "interests": [
-      "Product quote",
-      "Technical consultation",
-      "Oil analysis",
-      "Site survey",
-      "Fleet supply program"
-    ],
-    "messageNote": "Optional, but it helps us route your request to the right specialist.",
     "submit": "Send inquiry",
     "pending": "Sending…",
     "consent": "By submitting, you agree that Mobility may contact you about this request. We do not sell your details.",
@@ -272,7 +258,6 @@
       "fullName": "Please enter your full name.",
       "company": "Please enter your company name.",
       "phone": "Please enter a phone number.",
-      "email": "Please enter a valid email address.",
       "sector": "Please select a sector."
     }
   },

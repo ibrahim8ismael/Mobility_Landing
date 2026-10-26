@@ -11,7 +11,6 @@ import {
 import { useState, type FormEvent } from "react";
 import {
   Button,
-  Description,
   FieldError,
   Form,
   Input,
@@ -182,25 +181,6 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
 
                       <div className="grid gap-4 md:grid-cols-2">
                         <TextField
-                          name="email"
-                          type="email"
-                          className="w-full"
-                          validate={(value) =>
-                            !value || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
-                              ? null
-                              : dict.errors.email
-                          }
-                        >
-                          <Label className={fieldLabelClass}>{dict.labels.email}</Label>
-                          <Input
-                            dir="ltr"
-                            placeholder={dict.placeholders.email}
-                            autoComplete="email"
-                          />
-                          <FieldError />
-                        </TextField>
-
-                        <TextField
                           isRequired
                           name="phone"
                           type="tel"
@@ -215,9 +195,6 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                           />
                           <FieldError />
                         </TextField>
-                      </div>
-
-                      <div className="grid gap-4 md:grid-cols-2">
                         <Select
                           isRequired
                           name="sector"
@@ -242,44 +219,11 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                           </Select.Popover>
                           <FieldError />
                         </Select>
-
-                        <TextField name="location" className="w-full">
-                          <Label className={fieldLabelClass}>{dict.labels.location}</Label>
-                          <Input
-                            placeholder={dict.placeholders.location}
-                            autoComplete="address-level2"
-                          />
-                        </TextField>
                       </div>
-
-                      <Select
-                        name="interest"
-                        placeholder={dict.placeholders.interest}
-                        className="w-full"
-                      >
-                        <Label className={fieldLabelClass}>{dict.labels.interest}</Label>
-                        <Select.Trigger>
-                          <Select.Value />
-                          <Select.Indicator />
-                        </Select.Trigger>
-                        <Select.Popover>
-                          <ListBox>
-                            {dict.interests.map((interest) => (
-                              <ListBox.Item key={interest} id={interest} textValue={interest}>
-                                {interest}
-                                <ListBox.ItemIndicator />
-                              </ListBox.Item>
-                            ))}
-                          </ListBox>
-                        </Select.Popover>
-                      </Select>
 
                       <TextField name="message" className="w-full">
                         <Label className={fieldLabelClass}>{dict.labels.message}</Label>
                         <TextArea rows={3} placeholder={dict.placeholders.message} />
-                        <Description className="text-xs text-slate-500">
-                          {dict.messageNote}
-                        </Description>
                       </TextField>
 
                       <Button
