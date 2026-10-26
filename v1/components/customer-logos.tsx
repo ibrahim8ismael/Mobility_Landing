@@ -1,12 +1,26 @@
+import Image from "next/image";
+
 import type { Dictionary } from "@/i18n/dictionaries";
 
-const SAMPLE_LOGOS = [
-  { mark: "N", name: "NORTHLINE", descriptor: "FLEET & LOGISTICS", color: "text-mobil" },
-  { mark: "R", name: "ROADWAY", descriptor: "TRANSPORT", color: "text-slate-700" },
-  { mark: "F", name: "FLEETCORE", descriptor: "COMMERCIAL FLEET", color: "text-mobil-red" },
-  { mark: "C", name: "CARGOWORKS", descriptor: "FREIGHT SERVICES", color: "text-mobil-deep" },
-  { mark: "M", name: "MILESTONE", descriptor: "HEAVY HAULAGE", color: "text-slate-700" },
-  { mark: "T", name: "TRANSITIQ", descriptor: "INDUSTRIAL MOVEMENT", color: "text-mobil" },
+const CUSTOMER_LOGOS = [
+  { name: "KAMA For Metal Industries", src: "/customer-logos/kama-metal-industries.png" },
+  { name: "Kandil Glass", src: "/customer-logos/kandil-glass.png" },
+  { name: "Fourtex Textile", src: "/customer-logos/fourtex-textile.png" },
+  { name: "Misr El Nour", src: "/customer-logos/misr-el-nour.png" },
+  { name: "Safir Plastic Industries", src: "/customer-logos/safir-plastics.png" },
+  { name: "Elsewedy Cables", src: "/customer-logos/elsewedy-cables.png" },
+  { name: "SIDPEC", src: "/customer-logos/sidpec.png" },
+  { name: "ANRPC", src: "/customer-logos/anrpc.png" },
+  { name: "Qena Paper Industry", src: "/customer-logos/qena-paper-industry.png" },
+  { name: "United Paper Mill", src: "/customer-logos/united-paper-mill.png" },
+  { name: "Granito Ceramic", src: "/customer-logos/granito-ceramic.png" },
+  { name: "REDCON Construction", src: "/customer-logos/redcon-construction.png" },
+  { name: "Abou El Wafa Ready Mix Concrete", src: "/customer-logos/abou-el-wafa-ready-mix.png" },
+  { name: "Orient Ceramics", src: "/customer-logos/orient-ceramics.png" },
+  { name: "Petrojet", src: "/customer-logos/petrojet.png" },
+  { name: "Petromaint", src: "/customer-logos/petromaint.png" },
+  { name: "Mediterranean Shipping Company (MSC)", src: "/customer-logos/msc.png" },
+  { name: "MES Shipping", src: "/customer-logos/mes-shipping.png" },
 ];
 
 export function CustomerLogos({
@@ -44,25 +58,19 @@ export function CustomerLogos({
               className="customer-marquee-group flex w-max shrink-0 items-stretch gap-4 px-2 sm:gap-5 sm:px-3"
               aria-hidden={isDuplicate}
             >
-              {SAMPLE_LOGOS.map((logo) => (
+              {CUSTOMER_LOGOS.map((logo) => (
                 <li
                   key={logo.name}
-                  className="flex h-[78px] w-[190px] shrink-0 items-center gap-3 rounded-2xl border border-slate-200/80 bg-white px-4 shadow-[0_8px_24px_-20px_rgba(11,27,48,0.32)] sm:h-[88px] sm:w-[220px]"
+                  className="h-[78px] w-[190px] shrink-0 overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-[0_8px_24px_-20px_rgba(11,27,48,0.32)] sm:h-[88px] sm:w-[220px]"
                 >
-                  <span
-                    aria-hidden="true"
-                    className={`grid size-10 shrink-0 place-items-center rounded-xl bg-mist font-display text-xl font-bold ${logo.color}`}
-                  >
-                    {logo.mark}
-                  </span>
-                  <span className="flex min-w-0 flex-col leading-tight">
-                    <span className="whitespace-nowrap font-display text-[0.92rem] font-bold tracking-[0.04em] text-ink">
-                      {logo.name}
-                    </span>
-                    <span className="mt-1 whitespace-nowrap text-[0.56rem] font-semibold tracking-[0.12em] text-slate-400">
-                      {logo.descriptor}
-                    </span>
-                  </span>
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={240}
+                    height={92}
+                    sizes="(min-width: 640px) 220px, 190px"
+                    className="h-full w-full object-contain"
+                  />
                 </li>
               ))}
             </ul>

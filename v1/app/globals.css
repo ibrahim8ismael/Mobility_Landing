@@ -165,7 +165,7 @@ html[dir="rtl"] textarea {
 .customer-marquee-track {
   display: flex;
   width: max-content;
-  animation: customer-marquee-x 38s linear infinite;
+  animation: customer-marquee-x 110s linear infinite;
 }
 
 .customer-marquee:hover .customer-marquee-track,
