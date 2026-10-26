@@ -21,7 +21,7 @@ function ProductCard({ product }: { product: Product }) {
   const Icon = product.icon;
 
   return (
-    <Card className="group relative h-full gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-0 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_28px_56px_-30px_rgba(11,46,98,0.45)]">
+    <Card className="group relative gap-0 overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-0 shadow-[0_2px_2px_rgba(11,27,48,0.02)] transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_28px_56px_-30px_rgba(11,46,98,0.45)]">
       <div className="pointer-events-none absolute -end-16 -top-16 size-44 rounded-full bg-[radial-gradient(circle,rgba(22,75,152,0.08),transparent_68%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f7fa]">
@@ -35,7 +35,7 @@ function ProductCard({ product }: { product: Product }) {
         />
       </div>
 
-      <div className="relative flex h-full flex-col p-6 sm:p-7">
+      <div className="relative p-5 sm:p-6">
         <div className="flex items-start justify-between gap-4">
           <span className="grid size-11 place-items-center rounded-2xl bg-blue-50 text-mobil transition-colors group-hover:bg-mobil group-hover:text-white">
             <Icon className="size-5" strokeWidth={1.9} aria-hidden="true" />
