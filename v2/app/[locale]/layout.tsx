@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, Cairo, IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import type { ReactNode } from "react";
 
 import "../globals.css";
@@ -96,7 +97,25 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       data-theme="light"
       className={`${fontClasses} h-full antialiased`}
     >
+      <head>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRSNRTH8');`}
+        </Script>
+      </head>
       <body className="flex min-h-full flex-col bg-[#f1f2f4] text-ink">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TRSNRTH8"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-mobil focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
