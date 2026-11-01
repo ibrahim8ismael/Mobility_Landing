@@ -151,27 +151,36 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                       </span>
                     </div>
 
-                    <Form className="mt-6 flex flex-col gap-4" onSubmit={handleSubmit}>
-                      <div className="grid gap-4 md:grid-cols-2">
+                    <Form className="mt-6 flex min-w-0 w-full max-w-full flex-col gap-4" onSubmit={handleSubmit}>
+                      <div className="grid min-w-0 w-full max-w-full grid-cols-1 gap-4 md:grid-cols-2">
                         <TextField
                           isRequired
+                          fullWidth
                           name="fullName"
-                          className="w-full"
+                          className="min-w-0 w-full max-w-full"
                           validate={(value) => (value.trim() ? null : dict.errors.fullName)}
                         >
                           <Label className={fieldLabelClass}>{dict.labels.fullName}</Label>
-                          <Input placeholder={dict.placeholders.fullName} autoComplete="name" />
+                          <Input
+                            fullWidth
+                            className="min-w-0 w-full max-w-full"
+                            placeholder={dict.placeholders.fullName}
+                            autoComplete="name"
+                          />
                           <FieldError />
                         </TextField>
 
                         <TextField
                           isRequired
+                          fullWidth
                           name="company"
-                          className="w-full"
+                          className="min-w-0 w-full max-w-full"
                           validate={(value) => (value.trim() ? null : dict.errors.company)}
                         >
                           <Label className={fieldLabelClass}>{dict.labels.company}</Label>
                           <Input
+                            fullWidth
+                            className="min-w-0 w-full max-w-full"
                             placeholder={dict.placeholders.company}
                             autoComplete="organization"
                           />
@@ -179,16 +188,19 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                         </TextField>
                       </div>
 
-                      <div className="grid gap-4 md:grid-cols-2">
+                      <div className="grid min-w-0 w-full max-w-full grid-cols-1 gap-4 md:grid-cols-2">
                         <TextField
                           isRequired
+                          fullWidth
                           name="phone"
                           type="tel"
-                          className="w-full"
+                          className="min-w-0 w-full max-w-full"
                           validate={(value) => (value.trim() ? null : dict.errors.phone)}
                         >
                           <Label className={fieldLabelClass}>{dict.labels.phone}</Label>
                           <Input
+                            fullWidth
+                            className="min-w-0 w-full max-w-full"
                             dir="ltr"
                             placeholder={dict.placeholders.phone}
                             autoComplete="tel"
@@ -197,13 +209,14 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                         </TextField>
                         <Select
                           isRequired
+                          fullWidth
                           name="sector"
                           placeholder={dict.placeholders.sector}
-                          className="w-full"
+                          className="min-w-0 w-full max-w-full"
                           validate={(value) => (value ? null : dict.errors.sector)}
                         >
                           <Label className={fieldLabelClass}>{dict.labels.sector}</Label>
-                          <Select.Trigger>
+                          <Select.Trigger className="min-w-0 w-full max-w-full">
                             <Select.Value />
                             <Select.Indicator />
                           </Select.Trigger>
@@ -221,9 +234,14 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                         </Select>
                       </div>
 
-                      <TextField name="message" className="w-full">
+                      <TextField name="message" fullWidth className="min-w-0 w-full max-w-full">
                         <Label className={fieldLabelClass}>{dict.labels.message}</Label>
-                        <TextArea rows={3} placeholder={dict.placeholders.message} />
+                        <TextArea
+                          fullWidth
+                          className="min-w-0 w-full max-w-full"
+                          rows={3}
+                          placeholder={dict.placeholders.message}
+                        />
                       </TextField>
 
                       <Button
