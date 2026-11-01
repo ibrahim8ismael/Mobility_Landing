@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-import { defaultLocale } from "./i18n/config";
+const defaultLocale = "ar";
 
 const nextConfig: NextConfig = {
   /* config options here */

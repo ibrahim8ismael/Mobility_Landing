@@ -5,37 +5,16 @@ import { Reveal } from "@/components/motion";
 import { SectionHeading } from "@/components/section-heading";
 import type { Dictionary } from "@/i18n/dictionaries";
 
-const mapMarkers = [
-  { left: "19%", top: "58%", tone: "red" },
-  { left: "37%", top: "58%", tone: "blue" },
-  { left: "68%", top: "32%", tone: "blue" },
-  { left: "82%", top: "32%", tone: "red" },
-];
-
 function EgyptMap({ ariaLabel }: { ariaLabel: string }) {
   return (
-    <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-slate-200/80 bg-[#f5f9ff] shadow-[0_30px_60px_-40px_rgba(11,46,98,0.45)]">
+    <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-blue-100 bg-[#f5f9ff] shadow-[0_30px_60px_-40px_rgba(11,46,98,0.45)]">
       <Image
-        src="/coverage-map-illustration.jpg"
+        src="/coverage-map-northern-delta.png"
         alt={ariaLabel}
         fill
         sizes="(min-width: 1280px) 600px, (min-width: 1024px) 48vw, 100vw"
         className="object-cover"
       />
-
-      {mapMarkers.map((marker, index) => (
-        <span
-          key={`${marker.left}-${marker.top}`}
-          className="absolute z-10 -translate-x-1/2 -translate-y-[92%] drop-shadow-[0_5px_8px_rgba(11,46,98,0.3)]"
-          style={{ left: marker.left, top: marker.top }}
-          aria-hidden="true"
-        >
-          <MapPin
-            className={marker.tone === "red" ? "size-9 fill-mobil-red text-white" : "size-9 fill-mobil text-white"}
-            strokeWidth={2.25}
-          />
-        </span>
-      ))}
     </div>
   );
 }

@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { LocaleSwitcher } from "@/components/locale-switcher";
 import type { Locale } from "@/i18n/config";
@@ -18,6 +18,7 @@ type SiteHeaderProps = {
 export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pendingNavigation = useRef<string | null>(null);
 
   const links = [
     { href: "#why", label: dict.why },
@@ -27,6 +28,11 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
     { href: "#contact", label: dict.contact },
   ];
 
+  function navigateToSection(href: string) {
+    pendingNavigation.current = href;
+    setOpen(false);
+  }
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
     onScroll();
@@ -35,9 +41,25 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    document.body.style.setProperty("overflow", open ? "hidden" : "");
+
+    if (!open && pendingNavigation.current) {
+      const href = pendingNavigation.current;
+      pendingNavigation.current = null;
+      const target = document.getElementById(href.slice(1));
+
+      if (target) {
+        window.history.pushState(null, "", href);
+        window.requestAnimationFrame(() => {
+          window.requestAnimationFrame(() => {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+      }
+    }
+
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.removeProperty("overflow");
     };
   }, [open]);
 
@@ -59,15 +81,11 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
           >
             <span className="relative block h-8 w-[132px] shrink-0 overflow-hidden sm:h-10 sm:w-[164px]" aria-hidden="true">
               <Image
-                src="/mobility-wordmark.png"
+                src="/mobility-wordmark-colorful-o.png"
                 alt=""
                 fill
                 sizes="(min-width: 640px) 164px, 132px"
                 className="object-cover"
-                style={{
-                  filter:
-                    "drop-shadow(1px 0 #164b98) drop-shadow(-1px 0 #164b98) drop-shadow(0 1px #164b98) drop-shadow(0 -1px #164b98)",
-                }}
                 priority
               />
             </span>
@@ -103,7 +121,11 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
           </nav>
 
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-            <LocaleSwitcher locale={locale} label={dict.switchLanguage} />
+            <LocaleSwitcher
+              locale={locale}
+              label={dict.switchLanguage}
+              className="hidden lg:inline-flex"
+            />
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
@@ -132,12 +154,16 @@ export function SiteHeader({ locale, dict, brand }: SiteHeaderProps) {
                   <a
                     key={link.href}
                     href={link.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigateToSection(link.href);
+                    }}
                     className="border-b border-slate-100 py-3.5 font-display text-base font-semibold text-ink last:border-b-0"
                   >
                     {link.label}
                   </a>
                 ))}
+                <LocaleSwitcher locale={locale} label={dict.switchLanguage} placement="menu" />
               </nav>
             </motion.div>
           ) : null}
