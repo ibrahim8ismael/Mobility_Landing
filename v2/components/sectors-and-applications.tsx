@@ -11,7 +11,7 @@ type CategoryTile = {
 
 function CategoryGrid({ items }: { items: CategoryTile[] }) {
   return (
-    <Stagger className="mt-9 grid grid-cols-2 gap-3 sm:mt-11 sm:gap-5 lg:grid-cols-3">
+    <Stagger className="mt-9 grid grid-cols-1 gap-3 sm:mt-11 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
       {items.map((item, index) => (
         <StaggerItem key={item.title} className="h-full">
           <figure className="group relative aspect-[4/3] overflow-hidden rounded-3xl bg-mobil-dark">
@@ -20,7 +20,7 @@ function CategoryGrid({ items }: { items: CategoryTile[] }) {
               alt={item.imageAlt}
               fill
               loading={index === 0 ? "eager" : "lazy"}
-              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 50vw"
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               className="object-cover transition-transform duration-700 group-hover:scale-[1.04] motion-reduce:transition-none"
             />
             <div
