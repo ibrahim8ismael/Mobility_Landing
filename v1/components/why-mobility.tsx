@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowUpRight, Handshake, Ship, Truck, Warehouse } from "lucide-react";
 import { Card } from "@heroui/react";
 import Image from "next/image";

@@ -2,11 +2,11 @@ import { notFound } from "next/navigation";
 
 import { Contact } from "@/components/contact";
 import { Coverage } from "@/components/coverage";
-import { CustomerLogos } from "@/components/customer-logos";
 import { Hero } from "@/components/hero";
 import { Products } from "@/components/products";
 import { Recognition } from "@/components/recognition";
 import { Services } from "@/components/services";
+import { SectorsAndApplications } from "@/components/sectors-and-applications";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { WhyMobility } from "@/components/why-mobility";
@@ -33,7 +33,10 @@ export default async function HomePage({
         <Hero dict={dict.hero} locale={locale} />
         <WhyMobility dict={dict.why} />
         <Products dict={dict.products} />
-        <CustomerLogos dict={dict.customers} />
+        <SectorsAndApplications
+          sectors={dict.sectors}
+          applications={dict.applications}
+        />
         <Recognition dict={dict.recognition} />
         <Services dict={dict.services} />
         <Coverage dict={dict.coverage} />

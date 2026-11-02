@@ -156,9 +156,77 @@
       ]
     }
   },
-  "customers": {
-    "title": "عملاؤنا",
-    "ariaLabel": "شعارات العملاء"
+  "sectors": {
+    "title": "القطاعات التي نخدمها",
+    "description": "نقدم دعمًا لاحتياجات التزييت والعناية بالمعدات في مختلف القطاعات الصناعية.",
+    "items": [
+      {
+        "title": "التصنيع العام",
+        "imageAlt": "فني يفحص آلة داخل مصنع للتصنيع العام",
+        "imageSrc": "/category-photos/general-manufacturing.webp"
+      },
+      {
+        "title": "البلاستيك",
+        "imageAlt": "مشغل يتابع آلة حقن البلاستيك داخل مصنع",
+        "imageSrc": "/category-photos/plastics.webp"
+      },
+      {
+        "title": "البتروكيماويات",
+        "imageAlt": "أنابيب وخزانات وأبراج تقطير في منشأة للبتروكيماويات",
+        "imageSrc": "/category-photos/petrochemicals.webp"
+      },
+      {
+        "title": "الورق",
+        "imageAlt": "فني يفحص لفائف ورق كبيرة على خط إنتاج في مصنع ورق",
+        "imageSrc": "/category-photos/paper.webp"
+      },
+      {
+        "title": "الزراعة",
+        "imageAlt": "ميكانيكي يفحص محرك حصادة في حقل زراعي",
+        "imageSrc": "/category-photos/agriculture.webp"
+      },
+      {
+        "title": "الأسمنت والإنشاءات",
+        "imageAlt": "شاحنات خلط الخرسانة ومعدات ثقيلة في محطة لإنتاج الأسمنت",
+        "imageSrc": "/category-photos/cement-construction.webp"
+      }
+    ]
+  },
+  "applications": {
+    "title": "التطبيقات التي ندعمها",
+    "description": "إرشادات التزييت للمعدات التي تساعد المصانع والأساطيل على مواصلة العمل.",
+    "items": [
+      {
+        "title": "علب التروس",
+        "imageAlt": "فني يفحص التروس الفولاذية داخل علبة تروس صناعية",
+        "imageSrc": "/category-photos/gearboxes.webp"
+      },
+      {
+        "title": "الأنظمة الهيدروليكية",
+        "imageAlt": "مكبس هيدروليكي وخراطيم زرقاء على خط إنتاج صناعي",
+        "imageSrc": "/category-photos/hydraulic-systems.webp"
+      },
+      {
+        "title": "محركات الديزل والأساطيل",
+        "imageAlt": "ميكانيكي أسطول يفحص محرك ديزل ثقيل في مركز صيانة شاحنات",
+        "imageSrc": "/category-photos/diesel-engines-fleets.webp"
+      },
+      {
+        "title": "المولدات",
+        "imageAlt": "مولد احتياطي صناعي كبير داخل غرفة مرافق",
+        "imageSrc": "/category-photos/generators.webp"
+      },
+      {
+        "title": "الغلايات",
+        "imageAlt": "مهندس يفحص غلاية بخار كبيرة وأنابيبها المعزولة",
+        "imageSrc": "/category-photos/boilers.webp"
+      },
+      {
+        "title": "الضواغط",
+        "imageAlt": "ضواغط هواء صناعية كبيرة داخل غرفة ضواغط نظيفة",
+        "imageSrc": "/category-photos/compressors.webp"
+      }
+    ]
   },
   "recognition": {
     "title": "التقدير العالمي لموبيليتي: دائرة التميز",

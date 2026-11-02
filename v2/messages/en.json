@@ -156,9 +156,77 @@
       ]
     }
   },
-  "customers": {
-    "title": "Our Customers",
-    "ariaLabel": "Customer logos"
+  "sectors": {
+    "title": "Sectors we serve",
+    "description": "Explore the industries where we support lubrication needs and equipment care.",
+    "items": [
+      {
+        "title": "General manufacturing",
+        "imageAlt": "Technician inspecting a machine inside a general manufacturing plant",
+        "imageSrc": "/category-photos/general-manufacturing.webp"
+      },
+      {
+        "title": "Plastics",
+        "imageAlt": "Operator monitoring an injection molding machine in a plastics plant",
+        "imageSrc": "/category-photos/plastics.webp"
+      },
+      {
+        "title": "Petrochemicals",
+        "imageAlt": "Pipes, storage tanks and distillation columns at a petrochemical facility",
+        "imageSrc": "/category-photos/petrochemicals.webp"
+      },
+      {
+        "title": "Paper",
+        "imageAlt": "Technician inspecting large paper rolls on a paper mill production line",
+        "imageSrc": "/category-photos/paper.webp"
+      },
+      {
+        "title": "Agriculture",
+        "imageAlt": "Mechanic inspecting a harvester engine in a field",
+        "imageSrc": "/category-photos/agriculture.webp"
+      },
+      {
+        "title": "Cement & construction",
+        "imageAlt": "Concrete mixer trucks and heavy equipment at a cement batching plant",
+        "imageSrc": "/category-photos/cement-construction.webp"
+      }
+    ]
+  },
+  "applications": {
+    "title": "Applications we support",
+    "description": "Lubricant guidance for the equipment that keeps plants and fleets operating.",
+    "items": [
+      {
+        "title": "Gearboxes",
+        "imageAlt": "Technician inspecting the steel gears inside an industrial gearbox",
+        "imageSrc": "/category-photos/gearboxes.webp"
+      },
+      {
+        "title": "Hydraulic systems",
+        "imageAlt": "Hydraulic press and blue hoses on an industrial production line",
+        "imageSrc": "/category-photos/hydraulic-systems.webp"
+      },
+      {
+        "title": "Diesel engines & fleets",
+        "imageAlt": "Fleet mechanic inspecting a heavy duty diesel engine in a truck bay",
+        "imageSrc": "/category-photos/diesel-engines-fleets.webp"
+      },
+      {
+        "title": "Generators",
+        "imageAlt": "Large industrial standby generator in a utility room",
+        "imageSrc": "/category-photos/generators.webp"
+      },
+      {
+        "title": "Boilers",
+        "imageAlt": "Engineer inspecting a large steam boiler and its insulated piping",
+        "imageSrc": "/category-photos/boilers.webp"
+      },
+      {
+        "title": "Compressors",
+        "imageAlt": "Large rotary screw compressors in a clean industrial compressor room",
+        "imageSrc": "/category-photos/compressors.webp"
+      }
+    ]
   },
   "recognition": {
     "title": "Mobility Global Recognition: The Circle of Excellence",
