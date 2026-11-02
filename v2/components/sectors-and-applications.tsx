@@ -28,7 +28,7 @@ function CategoryGrid({ items }: { items: CategoryTile[] }) {
               aria-hidden="true"
             />
             <figcaption className="absolute inset-x-0 bottom-0 p-3 text-start sm:p-5">
-              <span className="inline-flex max-w-full rounded-xl border border-white/30 bg-slate-950/70 px-4 py-2 font-display text-lg font-bold leading-snug text-white shadow-md backdrop-blur-sm sm:text-2xl">
+              <span className="inline-block max-w-full font-display text-lg font-bold leading-snug text-white sm:text-2xl">
                 {item.title}
               </span>
             </figcaption>
