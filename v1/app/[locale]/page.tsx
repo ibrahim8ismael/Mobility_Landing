@@ -40,7 +40,12 @@ export default async function HomePage({
         <Recognition dict={dict.recognition} />
         <Services dict={dict.services} />
         <Coverage dict={dict.coverage} />
-        <Contact locale={locale} dict={dict.contact} />
+        <Contact
+          locale={locale}
+          dict={dict.contact}
+          sectorOptions={dict.sectors.items.map((item) => item.title)}
+          equipmentOptions={dict.applications.items.map((item) => item.title)}
+        />
       </main>
       <SiteFooter brand={dict.brand} dict={dict.footer} />
     </>

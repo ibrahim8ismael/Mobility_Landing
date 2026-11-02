@@ -27,7 +27,63 @@ import type { Dictionary } from "@/i18n/dictionaries";
 
 const fieldLabelClass = "text-xs font-semibold uppercase tracking-[0.1em] text-slate-500";
 
-export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["contact"] }) {
+function DropdownField({
+  name,
+  label,
+  placeholder,
+  options,
+  otherOption,
+  error,
+  className = "",
+}: {
+  name: string;
+  label: string;
+  placeholder: string;
+  options: string[];
+  otherOption: string;
+  error: string;
+  className?: string;
+}) {
+  return (
+    <Select
+      isRequired
+      fullWidth
+      name={name}
+      placeholder={placeholder}
+      className={`min-w-0 w-full max-w-full ${className}`}
+      validate={(value) => (value ? null : error)}
+    >
+      <Label className={fieldLabelClass}>{label}</Label>
+      <Select.Trigger className="min-w-0 w-full max-w-full">
+        <Select.Value />
+        <Select.Indicator />
+      </Select.Trigger>
+      <Select.Popover>
+        <ListBox>
+          {[...options, otherOption].map((option) => (
+            <ListBox.Item key={option} id={option} textValue={option}>
+              {option}
+              <ListBox.ItemIndicator />
+            </ListBox.Item>
+          ))}
+        </ListBox>
+      </Select.Popover>
+      <FieldError />
+    </Select>
+  );
+}
+
+export function Contact({
+  locale,
+  dict,
+  sectorOptions,
+  equipmentOptions,
+}: {
+  locale: Locale;
+  dict: Dictionary["contact"];
+  sectorOptions: string[];
+  equipmentOptions: string[];
+}) {
   const [pending, setPending] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
@@ -186,9 +242,6 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                           />
                           <FieldError />
                         </TextField>
-                      </div>
-
-                      <div className="grid min-w-0 w-full max-w-full grid-cols-1 gap-4 md:grid-cols-2">
                         <TextField
                           isRequired
                           fullWidth
@@ -207,31 +260,39 @@ export function Contact({ locale, dict }: { locale: Locale; dict: Dictionary["co
                           />
                           <FieldError />
                         </TextField>
-                        <Select
-                          isRequired
-                          fullWidth
+                        <DropdownField
+                          name="industrialArea"
+                          label={dict.labels.industrialArea}
+                          placeholder={dict.placeholders.industrialArea}
+                          options={dict.industrialAreas}
+                          otherOption={dict.other}
+                          error={dict.errors.industrialArea}
+                        />
+                        <DropdownField
+                          name="equipmentType"
+                          label={dict.labels.equipmentType}
+                          placeholder={dict.placeholders.equipmentType}
+                          options={equipmentOptions}
+                          otherOption={dict.other}
+                          error={dict.errors.equipmentType}
+                        />
+                        <DropdownField
+                          name="oilType"
+                          label={dict.labels.oilType}
+                          placeholder={dict.placeholders.oilType}
+                          options={dict.oilTypes}
+                          otherOption={dict.other}
+                          error={dict.errors.oilType}
+                        />
+                        <DropdownField
                           name="sector"
+                          label={dict.labels.sector}
                           placeholder={dict.placeholders.sector}
-                          className="min-w-0 w-full max-w-full"
-                          validate={(value) => (value ? null : dict.errors.sector)}
-                        >
-                          <Label className={fieldLabelClass}>{dict.labels.sector}</Label>
-                          <Select.Trigger className="min-w-0 w-full max-w-full">
-                            <Select.Value />
-                            <Select.Indicator />
-                          </Select.Trigger>
-                          <Select.Popover>
-                            <ListBox>
-                              {dict.sectors.map((sector) => (
-                                <ListBox.Item key={sector} id={sector} textValue={sector}>
-                                  {sector}
-                                  <ListBox.ItemIndicator />
-                                </ListBox.Item>
-                              ))}
-                            </ListBox>
-                          </Select.Popover>
-                          <FieldError />
-                        </Select>
+                          options={sectorOptions}
+                          otherOption={dict.other}
+                          error={dict.errors.sector}
+                          className="md:col-span-2"
+                        />
                       </div>
 
                       <TextField name="message" fullWidth className="min-w-0 w-full max-w-full">

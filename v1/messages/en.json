@@ -314,6 +314,9 @@
       "fullName": "Full name *",
       "company": "Company / Factory / Fleet Name *",
       "phone": "Phone number *",
+      "industrialArea": "Industrial area *",
+      "equipmentType": "Equipment type *",
+      "oilType": "Oil type *",
       "sector": "Industry sector *",
       "message": "Primary request (optional)"
     },
@@ -321,18 +324,29 @@
       "fullName": "Your name",
       "company": "Company / factory / fleet name",
       "phone": "+20 1XX XXX XXXX",
+      "industrialArea": "Select an industrial area",
+      "equipmentType": "Select equipment type",
+      "oilType": "Select an oil type",
       "sector": "Select a sector",
       "message": "Tell us what you need help with."
     },
-    "sectors": [
-      "Food manufacturing",
-      "Cement",
-      "Hydraulics & industrial machinery",
-      "Marine & ports",
-      "Transport & fleet",
-      "Free zone",
-      "Other"
+    "industrialAreas": [
+      "10th of Ramadan City",
+      "6th of October City",
+      "Borg El Arab",
+      "Amreya",
+      "Obour",
+      "Sadat City"
     ],
+    "oilTypes": [
+      "Industrial gear oil",
+      "Hydraulic oil",
+      "Diesel engine oil",
+      "Compressor oil",
+      "Turbine oil",
+      "Grease"
+    ],
+    "other": "Other",
     "submit": "Send inquiry",
     "pending": "Sending…",
     "consent": "By submitting, you agree that Mobility may contact you about this request. We do not sell your details.",
@@ -345,6 +359,9 @@
       "fullName": "Please enter your full name.",
       "company": "Please enter your company name.",
       "phone": "Please enter a phone number.",
+      "industrialArea": "Please select an industrial area.",
+      "equipmentType": "Please select an equipment type.",
+      "oilType": "Please select an oil type.",
       "sector": "Please select a sector."
     }
   },
