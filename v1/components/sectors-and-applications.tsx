@@ -7,7 +7,6 @@ type CategoryTile = {
   title: string;
   imageAlt: string;
   imageSrc: string;
-  productName?: string;
 };
 
 function CategoryGrid({ items }: { items: CategoryTile[] }) {
@@ -28,15 +27,10 @@ function CategoryGrid({ items }: { items: CategoryTile[] }) {
               className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/10 to-transparent"
               aria-hidden="true"
             />
-            <figcaption className="absolute inset-x-0 bottom-0 flex flex-col items-end p-3 text-right rtl:items-start sm:p-5">
+            <figcaption className="absolute inset-x-0 bottom-0 p-3 text-right sm:p-5">
               <span className="max-w-full font-display text-lg font-bold leading-snug text-white sm:text-2xl">
                 {item.title}
               </span>
-              {item.productName ? (
-                <span className="mt-1 max-w-full font-sans text-xs font-semibold leading-snug text-white/90 sm:text-sm">
-                  {item.productName}
-                </span>
-              ) : null}
             </figcaption>
           </figure>
         </StaggerItem>

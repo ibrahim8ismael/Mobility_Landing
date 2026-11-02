@@ -199,38 +199,32 @@
       {
         "title": "علب التروس",
         "imageAlt": "فني يفحص تروسًا صناعية وبجواره عبوة زيت Mobilgear 600 XP 220",
-        "imageSrc": "/category-photos/gearboxes-product.webp",
-        "productName": "Mobilgear 600 XP 220"
+        "imageSrc": "/category-photos/gearboxes-product.webp"
       },
       {
         "title": "الأنظمة الهيدروليكية",
         "imageAlt": "مكبس هيدروليكي وخراطيم زرقاء وبجواره عبوة Mobil DTE 25 Ultra",
-        "imageSrc": "/category-photos/hydraulic-systems-product.webp",
-        "productName": "Mobil DTE 25 Ultra"
+        "imageSrc": "/category-photos/hydraulic-systems-product.webp"
       },
       {
         "title": "محركات الديزل والأساطيل",
         "imageAlt": "ميكانيكي يفحص محرك ديزل وبجواره عبوة Mobil Delvac Modern 15W-40",
-        "imageSrc": "/category-photos/diesel-engines-fleets-product.webp",
-        "productName": "Mobil Delvac Modern 15W-40"
+        "imageSrc": "/category-photos/diesel-engines-fleets-product.webp"
       },
       {
         "title": "المولدات",
         "imageAlt": "مولد صناعي كبير وبجواره برميل Mobilgard 412",
-        "imageSrc": "/category-photos/generators-product.webp",
-        "productName": "Mobilgard 412"
+        "imageSrc": "/category-photos/generators-product.webp"
       },
       {
         "title": "الغلايات",
         "imageAlt": "مهندس يفحص غلاية حرارية وبجوارها عبوة Mobiltherm 605",
-        "imageSrc": "/category-photos/boilers-product.webp",
-        "productName": "Mobiltherm 605"
+        "imageSrc": "/category-photos/boilers-product.webp"
       },
       {
         "title": "الضواغط",
         "imageAlt": "ضواغط هواء صناعية وبجوارها عبوة زيت Mobil Rarus 427",
-        "imageSrc": "/category-photos/compressors-product.webp",
-        "productName": "Mobil Rarus 427"
+        "imageSrc": "/category-photos/compressors-product.webp"
       }
     ]
   },

@@ -199,38 +199,32 @@
       {
         "title": "Gearboxes",
         "imageAlt": "Technician inspecting industrial gearbox gears beside a Mobilgear 600 XP 220 lubricant pail",
-        "imageSrc": "/category-photos/gearboxes-product.webp",
-        "productName": "Mobilgear 600 XP 220"
+        "imageSrc": "/category-photos/gearboxes-product.webp"
       },
       {
         "title": "Hydraulic systems",
         "imageAlt": "Hydraulic press and blue hoses beside a Mobil DTE 25 Ultra lubricant pail",
-        "imageSrc": "/category-photos/hydraulic-systems-product.webp",
-        "productName": "Mobil DTE 25 Ultra"
+        "imageSrc": "/category-photos/hydraulic-systems-product.webp"
       },
       {
         "title": "Diesel engines & fleets",
         "imageAlt": "Fleet mechanic inspecting a heavy duty diesel engine beside a Mobil Delvac Modern jug",
-        "imageSrc": "/category-photos/diesel-engines-fleets-product.webp",
-        "productName": "Mobil Delvac Modern 15W-40"
+        "imageSrc": "/category-photos/diesel-engines-fleets-product.webp"
       },
       {
         "title": "Generators",
         "imageAlt": "Industrial standby generator beside a Mobilgard 412 oil drum",
-        "imageSrc": "/category-photos/generators-product.webp",
-        "productName": "Mobilgard 412"
+        "imageSrc": "/category-photos/generators-product.webp"
       },
       {
         "title": "Boilers",
         "imageAlt": "Engineer inspecting a thermal-oil boiler beside a Mobiltherm 605 container",
-        "imageSrc": "/category-photos/boilers-product.webp",
-        "productName": "Mobiltherm 605"
+        "imageSrc": "/category-photos/boilers-product.webp"
       },
       {
         "title": "Compressors",
         "imageAlt": "Industrial air compressors beside a Mobil Rarus 427 compressor-oil pail",
-        "imageSrc": "/category-photos/compressors-product.webp",
-        "productName": "Mobil Rarus 427"
+        "imageSrc": "/category-photos/compressors-product.webp"
       }
     ]
   },
