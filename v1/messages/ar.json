@@ -198,33 +198,39 @@
     "items": [
       {
         "title": "علب التروس",
-        "imageAlt": "فني يفحص التروس الفولاذية داخل علبة تروس صناعية",
-        "imageSrc": "/category-photos/gearboxes.webp"
+        "imageAlt": "فني يفحص تروسًا صناعية وبجواره عبوة زيت Mobilgear 600 XP 220",
+        "imageSrc": "/category-photos/gearboxes-product.webp",
+        "productName": "Mobilgear 600 XP 220"
       },
       {
         "title": "الأنظمة الهيدروليكية",
-        "imageAlt": "مكبس هيدروليكي وخراطيم زرقاء على خط إنتاج صناعي",
-        "imageSrc": "/category-photos/hydraulic-systems.webp"
+        "imageAlt": "مكبس هيدروليكي وخراطيم زرقاء وبجواره عبوة Mobil DTE 25 Ultra",
+        "imageSrc": "/category-photos/hydraulic-systems-product.webp",
+        "productName": "Mobil DTE 25 Ultra"
       },
       {
         "title": "محركات الديزل والأساطيل",
-        "imageAlt": "ميكانيكي أسطول يفحص محرك ديزل ثقيل في مركز صيانة شاحنات",
-        "imageSrc": "/category-photos/diesel-engines-fleets.webp"
+        "imageAlt": "ميكانيكي يفحص محرك ديزل وبجواره عبوة Mobil Delvac Modern 15W-40",
+        "imageSrc": "/category-photos/diesel-engines-fleets-product.webp",
+        "productName": "Mobil Delvac Modern 15W-40"
       },
       {
         "title": "المولدات",
-        "imageAlt": "مولد احتياطي صناعي كبير داخل غرفة مرافق",
-        "imageSrc": "/category-photos/generators.webp"
+        "imageAlt": "مولد صناعي كبير وبجواره برميل Mobilgard 412",
+        "imageSrc": "/category-photos/generators-product.webp",
+        "productName": "Mobilgard 412"
       },
       {
         "title": "الغلايات",
-        "imageAlt": "مهندس يفحص غلاية بخار كبيرة وأنابيبها المعزولة",
-        "imageSrc": "/category-photos/boilers.webp"
+        "imageAlt": "مهندس يفحص غلاية حرارية وبجوارها عبوة Mobiltherm 605",
+        "imageSrc": "/category-photos/boilers-product.webp",
+        "productName": "Mobiltherm 605"
       },
       {
         "title": "الضواغط",
-        "imageAlt": "ضواغط هواء صناعية كبيرة داخل غرفة ضواغط نظيفة",
-        "imageSrc": "/category-photos/compressors.webp"
+        "imageAlt": "ضواغط هواء صناعية وبجوارها عبوة زيت Mobil Rarus 427",
+        "imageSrc": "/category-photos/compressors-product.webp",
+        "productName": "Mobil Rarus 427"
       }
     ]
   },
