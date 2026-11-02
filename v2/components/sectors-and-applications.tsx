@@ -27,8 +27,10 @@ function CategoryGrid({ items }: { items: CategoryTile[] }) {
               className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/10 to-transparent"
               aria-hidden="true"
             />
-            <figcaption className="absolute inset-x-0 bottom-0 p-3 font-display text-sm font-semibold leading-snug text-white sm:p-5 sm:text-xl">
-              {item.title}
+            <figcaption className="absolute inset-x-0 bottom-0 p-3 text-start sm:p-5">
+              <span className="inline-flex max-w-full rounded-xl border border-white/30 bg-slate-950/70 px-4 py-2 font-display text-lg font-bold leading-snug text-white shadow-md backdrop-blur-sm sm:text-2xl">
+                {item.title}
+              </span>
             </figcaption>
           </figure>
         </StaggerItem>
