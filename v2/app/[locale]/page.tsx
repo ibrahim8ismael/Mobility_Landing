@@ -4,7 +4,6 @@ import { Contact } from "@/components/contact";
 import { Coverage } from "@/components/coverage";
 import { Hero } from "@/components/hero";
 import { Products } from "@/components/products";
-import { Recognition } from "@/components/recognition";
 import { Services } from "@/components/services";
 import { SectorsAndApplications } from "@/components/sectors-and-applications";
 import { SiteFooter } from "@/components/site-footer";
@@ -37,7 +36,6 @@ export default async function HomePage({
           sectors={dict.sectors}
           applications={dict.applications}
         />
-        <Recognition dict={dict.recognition} />
         <Services dict={dict.services} />
         <Coverage dict={dict.coverage} />
         <Contact dict={dict.contact} />
