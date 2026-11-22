@@ -9,6 +9,7 @@ import { SectorsAndApplications } from "@/components/sectors-and-applications";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { WhyMobility } from "@/components/why-mobility";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -46,6 +47,7 @@ export default async function HomePage({
         />
       </main>
       <SiteFooter brand={dict.brand} dict={dict.footer} />
+      <WhatsAppButton locale={locale} />
     </>
   );
 }

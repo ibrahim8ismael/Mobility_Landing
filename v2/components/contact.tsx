@@ -3,8 +3,7 @@ import { ArrowUpRight, MessageCircle, PhoneCall, ShieldCheck } from "lucide-reac
 import { SectionHeading } from "@/components/section-heading";
 import type { Dictionary } from "@/i18n/dictionaries";
 
-// Temporary Twilio WhatsApp Sandbox number for the V2 demo. Replace with Mobility's number.
-const WHATSAPP_NUMBER = "14155238886";
+const WHATSAPP_NUMBER = "201023545556";
 
 export function Contact({ dict }: { dict: Dictionary["contact"] }) {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(dict.whatsappMessage)}`;
